@@ -19,19 +19,19 @@ export default function QuizConfidencePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center mt-4 flex-grow">
+      <div className="flex flex-col items-center justify-center text-center flex-grow mt-4">
         {confidenceImage && (
             <Image
               src={confidenceImage.imageUrl}
               alt={confidenceImage.description}
-              width={100}
-              height={100}
-              className="rounded-md object-cover mb-8"
+              width={150}
+              height={150}
+              className="rounded-md object-cover"
               data-ai-hint={confidenceImage.imageHint}
             />
         )}
 
-        <h1 className="text-xl font-bold leading-tight">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
+        <h1 className="text-xl font-bold leading-tight mt-8">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
