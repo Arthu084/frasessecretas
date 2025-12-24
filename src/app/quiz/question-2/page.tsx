@@ -39,8 +39,8 @@ export default function QuizConfidencePage() {
           <Button
             className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
             style={{
-              background: 'linear-gradient(to right, #991b1b, #7f1d1d)',
-              border: '1px solid #b91c1c',
+              background: 'linear-gradient(to right, #15803d, #166534)',
+              border: '1px solid #16a34a',
             }}
           >
             Sim, definitivamente. Isso me daria uma nova personalidade
@@ -48,8 +48,8 @@ export default function QuizConfidencePage() {
           <Button
             className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
             style={{
-              background: 'linear-gradient(to right, #991b1b, #7f1d1d)',
-              border: '1px solid #b91c1c',
+              background: 'linear-gradient(to right, #15803d, #166534)',
+              border: '1px solid #16a34a',
             }}
           >
             Sim, muito. Me ajudaria a superar minha timidez e inseguranças
@@ -57,8 +57,8 @@ export default function QuizConfidencePage() {
           <Button
             className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
             style={{
-                background: 'linear-gradient(to right, #991b1b, #7f1d1d)',
-                border: '1px solid #b91c1c',
+                background: 'linear-gradient(to right, #15803d, #166534)',
+                border: '1px solid #16a34a',
               }}
           >
             Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
