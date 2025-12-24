@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 export default function ResultsPage() {
   // TODO: Add the correct link for the final button
@@ -10,8 +11,8 @@ export default function ResultsPage() {
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans p-4">
       <div className="flex flex-col items-center justify-center text-center flex-grow">
-        <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-          PARABÉNS, VOCÊ FOI <br/> SELECIONADA PARA TER <br/> ACESSO A ESSE <span className="text-red-500">SEGREDO</span> <br/> <span className="text-red-500">DA SEDUÇÃO</span>
+        <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+          PARABÉNS, VOCÊ FOI <br/> SELECIONADA PARA TER ACESSO <br/> A ESSE <span className="text-red-500">SEGREDO</span> <br/> <span className="text-red-500">DA SEDUÇÃO</span>
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
@@ -28,6 +29,13 @@ export default function ResultsPage() {
             >
                 SIM, QUERO CONTINUAR!
             </Button>
+        </Link>
+      </div>
+      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
+        <Link href="/quiz/question-4">
+          <Button variant="outline" size="icon">
+            <ArrowLeft />
+          </Button>
         </Link>
       </div>
     </div>
