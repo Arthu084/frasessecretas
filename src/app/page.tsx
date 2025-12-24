@@ -2,19 +2,25 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Link from 'next/link';
 
 export default function QuizPage() {
+  const secretImage = PlaceHolderImages.find((img) => img.id === 'secret');
+
   return (
     <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans">
       <div className="absolute top-0 left-0 w-full h-1/3">
-        <Image
-          src="https://picsum.photos/seed/secret/800/600"
-          alt="Mulher com o dedo nos lábios em sinal de silêncio"
-          fill
-          style={{ objectFit: 'cover' }}
-          className="opacity-50"
-          data-ai-hint="woman secret"
-        />
+        {secretImage && (
+          <Image
+            src={secretImage.imageUrl}
+            alt={secretImage.description}
+            fill
+            style={{ objectFit: 'cover' }}
+            className="opacity-50"
+            data-ai-hint={secretImage.imageHint}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
       </div>
 
@@ -36,9 +42,11 @@ export default function QuizPage() {
           Levará menos de 1 minuto
         </p>
 
-        <Button className="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-green-500/50 transition-all duration-300 transform hover:scale-105">
-          SIM, VAMOS COMEÇAR!
-        </Button>
+        <Link href="/quiz">
+          <Button className="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-green-500/50 transition-all duration-300 transform hover:scale-105">
+            SIM, VAMOS COMEÇAR!
+          </Button>
+        </Link>
       </div>
     </div>
   );
