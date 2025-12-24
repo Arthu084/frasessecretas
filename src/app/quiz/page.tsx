@@ -11,16 +11,13 @@ const GenderIcon = () => (
       height="64"
       viewBox="0 0 24 24"
       fill="#3b82f6"
-      stroke="white"
+      stroke="#3b82f6"
       strokeWidth="0"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <circle cx="12" cy="6" r="4" fill="white" />
-      <path
-        d="M12 10c-2.2 0-4 1.8-4 4v8h8v-8c0-2.2-1.8-4-4-4z"
-        fill="white"
-      />
+      <circle cx="12" cy="4" r="3" />
+      <rect x="7" y="9" width="10" height="12" rx="2" />
     </svg>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,16 +25,13 @@ const GenderIcon = () => (
       height="64"
       viewBox="0 0 24 24"
       fill="#ec4899"
-      stroke="white"
+      stroke="#ec4899"
       strokeWidth="0"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <circle cx="12" cy="6" r="4" fill="white" />
-      <path
-        d="M12 10c-2.2 0-4 1.8-4 4v2h2.5l-1.5 6h6l-1.5-6H16v-2c0-2.2-1.8-4-4-4z"
-        fill="white"
-      />
+      <circle cx="12" cy="4" r="3" />
+      <path d="M6 9h12v12H6z" transform="matrix(1 0 0 1 0 0) skewX(0)" />
     </svg>
   </div>
 );
