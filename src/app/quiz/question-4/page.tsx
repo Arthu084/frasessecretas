@@ -7,7 +7,7 @@ import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function QuizDesirePage() {
-  const desireImage = PlaceHolderImages.find((img) => img.id === 'desire');
+  const desireImage = PlaceHolderImages.find((img) => img.id === 'couple-hug');
 
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
@@ -67,7 +67,7 @@ export default function QuizDesirePage() {
       </div>
 
       <div className="flex justify-between w-full max-w-md mx-auto mt-8">
-        <Link href="/quiz/question-2">
+        <Link href="/quiz/question-3">
           <Button variant="outline" size="icon">
             <ArrowLeft />
           </Button>
