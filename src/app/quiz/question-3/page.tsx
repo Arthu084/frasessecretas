@@ -25,8 +25,8 @@ export default function QuizDesirePage() {
             <Image
               src={desireImage.imageUrl}
               alt={desireImage.description}
-              width={180}
-              height={108}
+              width={160}
+              height={96}
               className="rounded-md object-cover mb-8"
               data-ai-hint={desireImage.imageHint}
             />
@@ -37,7 +37,7 @@ export default function QuizDesirePage() {
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
             style={{
                 background: 'linear-gradient(to right, #dc2626, #b91c1c)',
                 border: '1px solid #ef4444',
@@ -46,7 +46,7 @@ export default function QuizDesirePage() {
             Mudaria completamente. Me sentiria poderosa e desejada
           </Button>
           <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
             style={{
                 background: 'linear-gradient(to right, #dc2626, #b91c1c)',
                 border: '1px solid #ef4444',
@@ -55,7 +55,7 @@ export default function QuizDesirePage() {
             Melhoraria muito. Finalmente teria a atenção que mereço
           </Button>
           <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
             style={{
                 background: 'linear-gradient(to right, #dc2626, #b91c1c)',
                 border: '1px solid #ef4444',
@@ -72,7 +72,7 @@ export default function QuizDesirePage() {
             <ArrowLeft />
           </Button>
         </Link>
-        <Link href="#">
+        <Link href="/quiz/question-4">
           <Button variant="outline" size="icon">
             <ArrowRight />
           </Button>
