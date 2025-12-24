@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 export default function QuizGenderPage() {
   return (
@@ -29,46 +29,47 @@ export default function QuizGenderPage() {
         <p className="text-zinc-400 mt-2">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Button
-            className="w-full text-lg py-6 rounded-lg font-bold text-white"
-            style={{
-              background: 'linear-gradient(to right, #c026d3, #a21caf)',
-              border: '1px solid #c026d3',
-            }}
-          >
-            MULHER
-          </Button>
-          <Button
-            className="w-full text-lg py-6 rounded-lg font-bold text-white"
-            style={{
-              background: 'linear-gradient(to right, #4f46e5, #3730a3)',
-              border: '1px solid #4f46e5',
-            }}
-          >
-            HOMEM
-          </Button>
-          <Button
-            variant="outline"
-            className="w-full text-lg py-6 rounded-lg font-bold text-zinc-300"
-            style={{
-                background: 'linear-gradient(to right, #71717a, #52525b)',
-                border: '1px solid #71717a',
+          <Link href="/quiz/question-2">
+            <Button
+              className="w-full text-lg py-6 rounded-lg font-bold text-white"
+              style={{
+                background: 'linear-gradient(to right, #c026d3, #a21caf)',
+                border: '1px solid #c026d3',
               }}
-          >
-            PREFIRO NÃO DIZER
-          </Button>
+            >
+              MULHER
+            </Button>
+          </Link>
+          <Link href="/quiz/question-2">
+            <Button
+              className="w-full text-lg py-6 rounded-lg font-bold text-white"
+              style={{
+                background: 'linear-gradient(to right, #4f46e5, #3730a3)',
+                border: '1px solid #4f46e5',
+              }}
+            >
+              HOMEM
+            </Button>
+          </Link>
+          <Link href="/quiz/question-2">
+            <Button
+              variant="outline"
+              className="w-full text-lg py-6 rounded-lg font-bold text-zinc-300"
+              style={{
+                  background: 'linear-gradient(to right, #71717a, #52525b)',
+                  border: '1px solid #71717a',
+                }}
+            >
+              PREFIRO NÃO DIZER
+            </Button>
+          </Link>
         </div>
       </div>
 
-      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
+      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
         <Link href="/">
           <Button variant="outline" size="icon">
             <ArrowLeft />
-          </Button>
-        </Link>
-        <Link href="/quiz/question-2">
-          <Button variant="outline" size="icon">
-            <ArrowRight />
           </Button>
         </Link>
       </div>

@@ -7,7 +7,7 @@ import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function QuizDesirePage() {
-  const desireImage = PlaceHolderImages.find((img) => img.id === 'couple-hug');
+  const desireImage = PlaceHolderImages.find((img) => img.id === 'desire');
 
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
@@ -20,15 +20,15 @@ export default function QuizDesirePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center mt-4 flex-grow">
+      <div className="flex flex-col items-center justify-center text-center mt-8 flex-grow">
         {desireImage && (
             <Image
-              src={desireImage.imageUrl}
-              alt={desireImage.description}
+              src="https://i.imgur.com/K4vlyQs.png"
+              alt="Mulher abraçando um homem por trás, ambos com roupas formais."
               width={140}
               height={84}
               className="rounded-md object-cover mb-8"
-              data-ai-hint={desireImage.imageHint}
+              data-ai-hint="couple desire"
             />
         )}
 
@@ -66,15 +66,10 @@ export default function QuizDesirePage() {
         </div>
       </div>
 
-      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
+      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
         <Link href="/quiz/question-3">
           <Button variant="outline" size="icon">
             <ArrowLeft />
-          </Button>
-        </Link>
-        <Link href="/quiz/question-4">
-          <Button variant="outline" size="icon">
-            <ArrowLeft className="rotate-180" />
           </Button>
         </Link>
       </div>

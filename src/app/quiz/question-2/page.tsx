@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function QuizConfidencePage() {
@@ -24,8 +24,8 @@ export default function QuizConfidencePage() {
             <Image
               src={confidenceImage.imageUrl}
               alt={confidenceImage.description}
-              width={160}
-              height={96}
+              width={140}
+              height={84}
               className="rounded-md object-cover mb-8"
               data-ai-hint={confidenceImage.imageHint}
             />
@@ -35,45 +35,46 @@ export default function QuizConfidencePage() {
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-              border: '1px solid #ef4444',
-            }}
-          >
-            Sim, definitivamente. Isso me daria uma nova personalidade
-          </Button>
-          <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-              border: '1px solid #ef4444',
-            }}
-          >
-            Sim, muito. Me ajudaria a superar minha timidez e inseguranças
-          </Button>
-          <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
+          <Link href="/quiz/question-3">
+            <Button
+              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+              style={{
                 background: 'linear-gradient(to right, #dc2626, #b91c1c)',
                 border: '1px solid #ef4444',
               }}
-          >
-            Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
-          </Button>
+            >
+              Sim, definitivamente. Isso me daria uma nova personalidade
+            </Button>
+          </Link>
+          <Link href="/quiz/question-3">
+            <Button
+              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+              style={{
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
+              }}
+            >
+              Sim, muito. Me ajudaria a superar minha timidez e inseguranças
+            </Button>
+          </Link>
+          <Link href="/quiz/question-3">
+            <Button
+              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+              style={{
+                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                  border: '1px solid #ef4444',
+                }}
+            >
+              Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
+            </Button>
+          </Link>
         </div>
       </div>
 
-      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
+      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
         <Link href="/quiz">
           <Button variant="outline" size="icon">
             <ArrowLeft />
-          </Button>
-        </Link>
-        <Link href="/quiz/question-3">
-          <Button variant="outline" size="icon">
-            <ArrowRight />
           </Button>
         </Link>
       </div>
