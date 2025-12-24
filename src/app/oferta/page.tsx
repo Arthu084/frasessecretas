@@ -24,25 +24,24 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-12">
-          <p className="text-sm md:text-base font-semibold tracking-wider">
-            ENVIE ESSAS <span className="text-red-500 font-bold">FRASES DISCRETAS</span> PARA ELE... E ELE FICARÁ OBCECADO POR VOCÊ
+          <p className="text-base md:text-lg font-semibold tracking-wider uppercase">
+            Envie essas <span className="text-red-500 font-bold">Frases Discretas</span> para ele...
           </p>
-          <h1 className="text-2xl md:text-3xl font-bold mt-4">
-            Sem ter que se humilhar, ficar fazendo ciúmes com outro,
+          <h1 className="text-3xl md:text-5xl font-extrabold mt-4 leading-tight">
+            E ele ficará <span className="text-cyan-400">obcecado</span> por você
           </h1>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-red-500 mt-2">
-            Ele não terá olhos pra outras mulheres...
+          <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
+            Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por atenção. Ele simplesmente não terá olhos para mais ninguém.
           </h2>
         </header>
 
-        <section className="bg-zinc-900 py-12 px-4 rounded-xl shadow-lg">
+        <section className="bg-zinc-900 py-12 px-4 rounded-xl shadow-lg my-16">
             <div className="text-center mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold">
-                    Confira alguns depoimentos de mulheres que usaram as{' '}
-                    <span className="text-cyan-400">Frases Discretas</span>
+                    Confira o que dizem as mulheres que usaram as <span className="text-cyan-400">Frases Discretas</span>
                 </h3>
                 <p className="text-lg md:text-xl text-zinc-300 mt-2">
-                    Elas conseguiram deixar o homem que tanto desejavam obcecado por elas...
+                    Elas conseguiram o homem que tanto desejavam...
                 </p>
             </div>
 
@@ -55,7 +54,7 @@ export default function OfferPage() {
             >
             <CarouselContent>
                 {testimonials.map((src, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 flex justify-center">
+                <CarouselItem key={index} className="flex justify-center">
                     <div className="p-1">
                         <Image
                             src={src}
@@ -73,18 +72,18 @@ export default function OfferPage() {
             </Carousel>
         </section>
 
-        <section className="text-center my-16">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            VOCÊ JÁ SE PERGUNTOU POR QUE OS HOMENS <span className="text-red-500">SÓ</span>
-          </h2>
-          <h2 className="text-3xl md:text-4xl font-bold text-red-500">PENSAM EM SEXO?</h2>
-
-          <p className="mt-8 text-lg md:text-xl max-w-xl mx-auto">
-            O Sexo libera um neurotransmissor no cérebro masculino chamado de <span className="text-red-400 font-bold">Dopamina</span>
-          </p>
-          <p className="mt-4 text-lg md:text-xl max-w-xl mx-auto">
-            Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo
-          </p>
+        <section className="text-center my-20">
+            <h2 className="text-3xl md:text-4xl font-bold">
+                Você já se perguntou por que os homens <span className="text-red-500">só pensam em sexo?</span>
+            </h2>
+            <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-4 text-zinc-300">
+                <p>
+                    A resposta está na <span className="text-red-400 font-bold">dopamina</span>, um neurotransmissor liberado no cérebro masculino que causa uma intensa sensação de prazer e recompensa.
+                </p>
+                <p>
+                    Na maioria das vezes, a única fonte de dopamina em um relacionamento acaba sendo o sexo. Mas e se você pudesse se tornar a principal fonte de dopamina para ele, muito além da intimidade?
+                </p>
+            </div>
         </section>
         
         <section className="my-16">
@@ -94,9 +93,9 @@ export default function OfferPage() {
               <p className="mt-4 text-lg md:text-xl font-medium">Acesso Imediato a Todas as Frases Secretas</p>
               
               <div className="my-8">
-                <span className="text-sm line-through text-rose-200">DE R$97,00</span>
-                <p className="text-5xl md:text-6xl font-black">POR APENAS R$9,90</p>
-                <p className="text-base font-medium text-rose-100">(Pagamento único)</p>
+                <span className="text-lg line-through text-rose-200">DE R$97,00</span>
+                <p className="text-6xl md:text-7xl font-black my-2">POR APENAS R$9,90</p>
+                <p className="text-base font-medium text-rose-100">(Pagamento único e acesso vitalício)</p>
               </div>
 
               <a href={ofertaLink} className="inline-block w-full max-w-md">
