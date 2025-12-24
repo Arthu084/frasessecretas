@@ -25,8 +25,8 @@ export default function QuizDesirePage() {
             <Image
               src="https://i.imgur.com/K4vlyQs.png"
               alt="Mulher abraçando um homem por trás, ambos com roupas formais."
-              width={200}
-              height={200}
+              width={140}
+              height={140}
               className="rounded-md object-cover"
               data-ai-hint="couple desire"
             />

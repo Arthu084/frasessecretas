@@ -24,8 +24,8 @@ export default function QuizConfidencePage() {
             <Image
               src={confidenceImage.imageUrl}
               alt={confidenceImage.description}
-              width={150}
-              height={150}
+              width={140}
+              height={140}
               className="rounded-md object-cover"
               data-ai-hint={confidenceImage.imageHint}
             />
