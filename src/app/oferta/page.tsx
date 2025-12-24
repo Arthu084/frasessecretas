@@ -88,18 +88,18 @@ export default function OfferPage() {
         
         <section className="my-16">
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
-            <CardContent className="p-6 md:p-10 text-center text-white">
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">O SEGREDO DAS FRASES DISCRETAS</h2>
-              <p className="mt-4 text-lg md:text-xl font-medium">Acesso Imediato a Todas as Frases Secretas</p>
+            <CardContent className="p-6 md:p-8 text-center text-white">
+              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">O SEGREDO DAS FRASES DISCRETAS</h2>
+              <p className="mt-3 text-base md:text-lg font-medium">Acesso Imediato a Todas as Frases Secretas</p>
               
-              <div className="my-8">
-                <span className="text-lg line-through text-rose-200">DE R$97,00</span>
-                <p className="text-6xl md:text-7xl font-black my-2">POR APENAS R$9,90</p>
-                <p className="text-base font-medium text-rose-100">(Pagamento único e acesso vitalício)</p>
+              <div className="my-6">
+                <span className="text-base line-through text-rose-200">DE R$97,00</span>
+                <p className="text-5xl md:text-6xl font-black my-1">POR APENAS R$9,90</p>
+                <p className="text-sm font-medium text-rose-100">(Pagamento único e acesso vitalício)</p>
               </div>
 
               <a href={ofertaLink} className="inline-block w-full max-w-md">
-                <Button size="lg" className="w-full h-auto text-xl md:text-2xl font-bold py-4 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <Button size="lg" className="w-full h-auto text-lg md:text-xl font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
                   SIM, QUERO ACESSO IMEDIATO!
                 </Button>
               </a>
