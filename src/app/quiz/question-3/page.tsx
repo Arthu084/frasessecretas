@@ -20,13 +20,13 @@ export default function QuizDesirePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center mt-8 flex-grow">
+      <div className="flex flex-col items-center justify-center text-center mt-4 flex-grow">
         {desireImage && (
             <Image
               src={desireImage.imageUrl}
               alt={desireImage.description}
               width={100}
-              height={60}
+              height={100}
               className="rounded-md object-cover mb-8"
               data-ai-hint={desireImage.imageHint}
             />
