@@ -1,111 +1,45 @@
 'use client';
 
-import { useState } from 'react';
-import { AppHeader } from '@/components/app/app-header';
-import { FileUploader } from '@/components/app/file-uploader';
-import { FunnelDisplay } from '@/components/app/funnel-display';
-import { handleAnalyzeScreenshot } from './actions';
-import type { AnalyzeFunnelScreenshotOutput } from '@/ai/flows/analyze-funnel-screenshot';
-import { Loader2 } from 'lucide-react';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
-export default function Home() {
-  const [analysis, setAnalysis] = useState<AnalyzeFunnelScreenshotOutput | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [image, setImage] = useState<string | null>(null);
-
-  const handleAnalysis = async (file: File) => {
-    if (!file) return;
-
-    setIsLoading(true);
-    setError(null);
-    setAnalysis(null);
-
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = async () => {
-      const photoDataUri = reader.result as string;
-      setImage(photoDataUri);
-      const result = await handleAnalyzeScreenshot(photoDataUri);
-      if (result.success) {
-        setAnalysis(result.data);
-      } else {
-        setError(result.error);
-      }
-      setIsLoading(false);
-    };
-    reader.onerror = () => {
-      setError('Failed to read the file.');
-      setIsLoading(false);
-    };
-  };
-  
-  const handleReset = () => {
-    setAnalysis(null);
-    setIsLoading(false);
-    setError(null);
-    setImage(null);
-  };
-
+export default function QuizPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-background font-sans">
-      <AppHeader />
-      <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8 md:py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground mb-4 font-headline">
-            Clone Any Funnel with AI
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Upload a screenshot of any sales funnel, and our AI will analyze its structure, text, and elements to help you recreate it in minutes.
-          </p>
-        </div>
+    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans">
+      <div className="absolute top-0 left-0 w-full h-1/3">
+        <Image
+          src="https://picsum.photos/seed/secret/800/600"
+          alt="Mulher com o dedo nos lábios em sinal de silêncio"
+          fill
+          style={{ objectFit: 'cover' }}
+          className="opacity-50"
+          data-ai-hint="woman secret"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
+      </div>
 
-        {analysis && (
-          <div className="text-center mb-8">
-            <Button onClick={handleReset}>Start Over</Button>
-          </div>
-        )}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-48">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          Descubra como deixar <br /> ele <span className="text-red-500">obcecado</span> por você
+        </h1>
 
-        <div className="space-y-8">
-          {!analysis && !isLoading && (
-            <FileUploader onFileSelect={handleAnalysis} disabled={isLoading} />
-          )}
+        <h2 className="text-2xl md:text-3xl font-bold mt-6">
+          Apenas usando essa <br />
+          <span className="text-cyan-400">“FRASE DISCRETA”</span>
+        </h2>
 
-          {isLoading && (
-            <div className="flex flex-col items-center justify-center gap-4 p-8 rounded-lg border bg-card text-card-foreground shadow-sm">
-              <Loader2 className="w-12 h-12 text-primary animate-spin" />
-              <p className="text-lg font-medium text-muted-foreground">AI is analyzing your funnel... this may take a moment.</p>
-            </div>
-          )}
+        <p className="mt-8 text-lg md:text-xl max-w-md">
+          Responda este pequeno questionário para saber se está pronta para ter acesso a esse segredo...
+        </p>
 
-          {error && (
-            <Alert variant="destructive">
-              <AlertTitle>Analysis Failed</AlertTitle>
-              <AlertDescription>{error}</AlertDescription>
-            </Alert>
-          )}
+        <p className="mt-4 text-base font-semibold">
+          Levará menos de 1 minuto
+        </p>
 
-          {analysis && image && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-               <div>
-                <h2 className="text-2xl font-bold mb-4 font-headline">Your Funnel Screenshot</h2>
-                <div className="overflow-hidden rounded-lg border shadow-lg">
-                  <img src={image} alt="Funnel screenshot" className="w-full h-auto" />
-                </div>
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold mb-4 font-headline">AI Analysis Results</h2>
-                <FunnelDisplay analysis={analysis} />
-              </div>
-            </div>
-          )}
-        </div>
-      </main>
-      <footer className="py-6 text-center text-muted-foreground text-sm">
-        <p>FunnelFlow AI</p>
-      </footer>
+        <Button className="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-green-500/50 transition-all duration-300 transform hover:scale-105">
+          SIM, VAMOS COMEÇAR!
+        </Button>
+      </div>
     </div>
   );
 }
