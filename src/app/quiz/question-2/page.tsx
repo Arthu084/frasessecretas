@@ -21,17 +21,14 @@ export default function QuizConfidencePage() {
 
       <div className="flex flex-col items-center justify-center text-center mt-8 flex-grow">
         {confidenceImage && (
-          <div className="relative w-[200px] h-[120px] mb-8">
-          <Image
-            src={confidenceImage.imageUrl}
-            alt={confidenceImage.description}
-            width={200}
-            height={120}
-            className="rounded-md object-cover"
-            data-ai-hint={confidenceImage.imageHint}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-        </div>
+            <Image
+              src={confidenceImage.imageUrl}
+              alt={confidenceImage.description}
+              width={200}
+              height={120}
+              className="rounded-md object-cover mb-8"
+              data-ai-hint={confidenceImage.imageHint}
+            />
         )}
 
         <h1 className="text-xl font-bold leading-tight">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
