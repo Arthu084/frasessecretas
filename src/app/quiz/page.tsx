@@ -2,6 +2,8 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export default function QuizGenderPage() {
   return (
@@ -56,6 +58,19 @@ export default function QuizGenderPage() {
             PREFIRO NÃO DIZER
           </Button>
         </div>
+      </div>
+
+      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
+        <Link href="/">
+          <Button variant="outline" size="icon">
+            <ArrowLeft />
+          </Button>
+        </Link>
+        <Link href="#">
+          <Button variant="outline" size="icon">
+            <ArrowRight />
+          </Button>
+        </Link>
       </div>
     </div>
   );
