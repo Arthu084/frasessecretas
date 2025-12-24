@@ -19,7 +19,7 @@ export default function QuizConfidencePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center mt-12 flex-grow">
+      <div className="flex flex-col items-center justify-center text-center mt-8 flex-grow">
         {confidenceImage && (
             <Image
               src={confidenceImage.imageUrl}
