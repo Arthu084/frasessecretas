@@ -24,7 +24,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-12">
-          <p className="text-base md:text-lg font-semibold tracking-wider uppercase">
+          <p className="text-lg md:text-xl font-semibold tracking-wider uppercase">
             Envie essas <span className="text-red-500 font-bold">Frases Discretas</span>
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mt-4 leading-tight">
@@ -99,7 +99,7 @@ export default function OfferPage() {
               </div>
 
               <a href={ofertaLink} className="inline-block w-full max-w-md">
-                <Button size="lg" className="w-full h-auto text-lg md:text-xl font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <Button size="lg" className="w-full h-auto text-lg font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
                   SIM, QUERO ACESSO IMEDIATO!
                 </Button>
               </a>
