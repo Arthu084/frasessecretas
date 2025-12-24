@@ -3,9 +3,14 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function QuizGenderPage() {
+  const router = useRouter();
+  const handleNext = () => {
+    router.push('/quiz/question-2');
+  };
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
       <div className="w-full max-w-md mx-auto mt-4">
@@ -29,8 +34,8 @@ export default function QuizGenderPage() {
         <p className="text-zinc-400 mt-2">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Link href="/quiz/question-2" passHref>
             <Button
+              onClick={handleNext}
               className="w-full text-lg py-6 rounded-lg font-bold text-white"
               style={{
                 background: 'linear-gradient(to right, #c026d3, #a21caf)',
@@ -39,9 +44,8 @@ export default function QuizGenderPage() {
             >
               MULHER
             </Button>
-          </Link>
-          <Link href="/quiz/question-2" passHref>
             <Button
+              onClick={handleNext}
               className="w-full text-lg py-6 rounded-lg font-bold text-white"
               style={{
                 background: 'linear-gradient(to right, #4f46e5, #3730a3)',
@@ -50,9 +54,8 @@ export default function QuizGenderPage() {
             >
               HOMEM
             </Button>
-          </Link>
-          <Link href="/quiz/question-2" passHref>
             <Button
+              onClick={handleNext}
               variant="outline"
               className="w-full text-lg py-6 rounded-lg font-bold text-zinc-300"
               style={{
@@ -62,15 +65,19 @@ export default function QuizGenderPage() {
             >
               PREFIRO NÃO DIZER
             </Button>
-          </Link>
         </div>
       </div>
 
-      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
+      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
         <Link href="/">
           <Button variant="outline" size="icon">
             <ArrowLeft />
           </Button>
+        </Link>
+        <Link href="/quiz/question-2">
+            <Button variant="outline" size="icon">
+                <ArrowRight />
+            </Button>
         </Link>
       </div>
     </div>

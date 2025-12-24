@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useRouter } from 'next/navigation';
 
@@ -26,7 +26,7 @@ export default function QuizDesirePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center flex-grow mt-4">
+      <div className="flex flex-col items-center justify-center text-center flex-grow mt-2">
         {desireImage && (
             <Image
               src={desireImage.imageUrl}
@@ -75,11 +75,16 @@ export default function QuizDesirePage() {
         </div>
       </div>
 
-      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
+      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
         <Link href="/quiz/question-2">
           <Button variant="outline" size="icon">
             <ArrowLeft />
           </Button>
+        </Link>
+        <Link href="/quiz/question-4">
+            <Button variant="outline" size="icon">
+                <ArrowRight />
+            </Button>
         </Link>
       </div>
     </div>

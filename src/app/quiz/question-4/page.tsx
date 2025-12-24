@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 export default function QuizDesirePage() {
@@ -28,8 +28,8 @@ export default function QuizDesirePage() {
         <Image
           src="https://i.imgur.com/K4vlyQs.png"
           alt="Mulher abraçando um homem por trás, ambos com roupas formais."
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           className="rounded-md object-cover"
           data-ai-hint="couple desire"
         />
@@ -71,11 +71,16 @@ export default function QuizDesirePage() {
         </div>
       </div>
 
-      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
+      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
         <Link href="/quiz/question-3">
           <Button variant="outline" size="icon">
             <ArrowLeft />
           </Button>
+        </Link>
+        <Link href="/quiz/results">
+            <Button variant="outline" size="icon">
+                <ArrowRight />
+            </Button>
         </Link>
       </div>
     </div>
