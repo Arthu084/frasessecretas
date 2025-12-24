@@ -1,40 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Man, PersonStanding, Woman } from 'lucide-react';
-
-const GenderIcon = () => (
-  <div className="flex items-center justify-center space-x-4">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="64"
-      height="64"
-      viewBox="0 0 24 24"
-      fill="#3b82f6"
-      stroke="#3b82f6"
-      strokeWidth="0"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="4" r="3" />
-      <rect x="7" y="9" width="10" height="12" rx="2" />
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="64"
-      height="64"
-      viewBox="0 0 24 24"
-      fill="#ec4899"
-      stroke="#ec4899"
-      strokeWidth="0"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="4" r="3" />
-      <path d="M6 9h12v12H6z" transform="matrix(1 0 0 1 0 0) skewX(0)" />
-    </svg>
-  </div>
-);
+import Image from 'next/image';
 
 export default function QuizGenderPage() {
   return (
@@ -49,7 +16,12 @@ export default function QuizGenderPage() {
       </div>
 
       <div className="flex flex-col items-center justify-center text-center mt-16 flex-grow">
-        <GenderIcon />
+        <Image
+          src="https://i.imgur.com/7Nk42IW.png"
+          alt="Ícones de Gênero"
+          width={138}
+          height={136}
+        />
 
         <h1 className="text-3xl font-bold mt-8">Qual o seu gênero?</h1>
         <p className="text-zinc-400 mt-2">Selecione a sua resposta</p>
