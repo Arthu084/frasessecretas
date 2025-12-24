@@ -16,7 +16,11 @@ const GenderIcon = () => (
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M12 2a5 5 0 0 0-5 5v3.5a3.5 3.5 0 0 0 3.5 3.5h3A3.5 3.5 0 0 0 17 10.5V7a5 5 0 0 0-5-5zm-3 14v5h6v-5h-6z" />
+      <circle cx="12" cy="6" r="4" fill="white" />
+      <path
+        d="M12 10c-2.2 0-4 1.8-4 4v8h8v-8c0-2.2-1.8-4-4-4z"
+        fill="white"
+      />
     </svg>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,11 @@ const GenderIcon = () => (
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M12 2a5 5 0 0 0-5 5v2.5a3.5 3.5 0 0 0 3.5 3.5h3A3.5 3.5 0 0 0 17 9.5V7a5 5 0 0 0-5-5zm-3 14l-2 5h10l-2-5H9z" />
+      <circle cx="12" cy="6" r="4" fill="white" />
+      <path
+        d="M12 10c-2.2 0-4 1.8-4 4v2h2.5l-1.5 6h6l-1.5-6H16v-2c0-2.2-1.8-4-4-4z"
+        fill="white"
+      />
     </svg>
   </div>
 );
