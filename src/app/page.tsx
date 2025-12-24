@@ -25,7 +25,7 @@ export default function QuizPage() {
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-48">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold leading-tight">
           Descubra como deixar <br /> ele <span className="text-red-500">obcecado</span> por você
         </h1>
 
