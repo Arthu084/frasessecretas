@@ -10,7 +10,7 @@ export default function QuizDesirePage() {
   const desireImage = {
       id: "desire",
       description: "Mulher abraçando um homem por trás, ambos com roupas formais.",
-      imageUrl: "https://imgur.com/K4vlyQs",
+      imageUrl: "https://i.imgur.com/K4vlyQs.png",
       imageHint: "couple desire"
     };
   return (
