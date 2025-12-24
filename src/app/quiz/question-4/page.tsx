@@ -10,8 +10,7 @@ export default function QuizDesirePage() {
   const router = useRouter();
 
   const handleNext = () => {
-    // This should ideally go to a results page, but for now, let's loop back to the beginning
-    router.push('/');
+    router.push('/quiz/results');
   };
 
   return (
@@ -25,12 +24,12 @@ export default function QuizDesirePage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center flex-grow mt-4">
+      <div className="flex flex-col items-center justify-center text-center mt-2 flex-grow">
         <Image
           src="https://i.imgur.com/K4vlyQs.png"
           alt="Mulher abraçando um homem por trás, ambos com roupas formais."
-          width={200}
-          height={200}
+          width={250}
+          height={250}
           className="rounded-md object-cover"
           data-ai-hint="couple desire"
         />
