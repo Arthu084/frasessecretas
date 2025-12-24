@@ -7,12 +7,8 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function QuizDesirePage() {
-  const desireImage = {
-      id: "desire",
-      description: "Mulher abraçando um homem por trás, ambos com roupas formais.",
-      imageUrl: "https://i.imgur.com/K4vlyQs.png",
-      imageHint: "couple desire"
-    };
+  const desireImage = PlaceHolderImages.find((img) => img.id === 'desire');
+
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
       <div className="w-full max-w-md mx-auto mt-4">
@@ -26,16 +22,18 @@ export default function QuizDesirePage() {
 
       <div className="flex flex-col items-center justify-center text-center mt-8 flex-grow">
         {desireImage && (
+          <div className="relative w-[180px] h-[100px] mb-8">
             <Image
               src={desireImage.imageUrl}
               alt={desireImage.description}
-              width={200}
-              height={120}
-              className="rounded-md object-cover opacity-80 mb-8"
+              width={180}
+              height={100}
+              className="rounded-md object-cover"
               data-ai-hint={desireImage.imageHint}
             />
+             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+          </div>
         )}
-
 
         <h1 className="text-xl font-bold leading-tight">Se você pudesse usar técnicas comprovadas para despertar o desejo de um homem, como isso mudaria sua vida amorosa?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
