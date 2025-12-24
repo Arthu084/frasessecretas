@@ -72,7 +72,7 @@ export default function QuizConfidencePage() {
             <ArrowLeft />
           </Button>
         </Link>
-        <Link href="#">
+        <Link href="/quiz/question-3">
           <Button variant="outline" size="icon">
             <ArrowRight />
           </Button>

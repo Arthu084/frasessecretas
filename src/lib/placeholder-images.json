@@ -11,6 +11,12 @@
       "description": "Um casal feliz em um encontro romântico.",
       "imageUrl": "https://i.imgur.com/ZqZjuri.png",
       "imageHint": "happy couple"
+    },
+    {
+      "id": "desire",
+      "description": "Mulher abraçando um homem por trás, ambos com roupas formais.",
+      "imageUrl": "https://i.imgur.com/8Nf9nB9.png",
+      "imageHint": "couple desire"
     }
   ]
 }
