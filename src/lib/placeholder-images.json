@@ -5,6 +5,12 @@
       "description": "Uma mulher com o dedo nos lábios em sinal de silêncio, com um homem de costas para a câmera.",
       "imageUrl": "https://i.imgur.com/aeOFTTy.jpg",
       "imageHint": "woman secret"
+    },
+    {
+      "id": "confidence",
+      "description": "Um casal feliz em um encontro romântico.",
+      "imageUrl": "https://images.unsplash.com/photo-1605381942640-0a262ce59788?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoYXBweSUyMGNvdXBsZXxlbnwwfHx8fDE3NjY1NDY3MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy couple"
     }
   ]
 }

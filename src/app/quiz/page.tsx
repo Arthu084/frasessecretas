@@ -66,7 +66,7 @@ export default function QuizGenderPage() {
             <ArrowLeft />
           </Button>
         </Link>
-        <Link href="#">
+        <Link href="/quiz/question-2">
           <Button variant="outline" size="icon">
             <ArrowRight />
           </Button>
