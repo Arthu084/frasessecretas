@@ -1,1 +1,6 @@
-// Flows will be imported for their side effects in this file.
+import { config } from 'dotenv';
+config();
+
+import '@/ai/flows/analyze-funnel-screenshot.ts';
+import '@/ai/flows/generate-funnel-copy.ts';
+import '@/ai/flows/suggest-funnel-improvements.ts';
