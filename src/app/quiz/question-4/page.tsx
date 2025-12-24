@@ -4,10 +4,15 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useRouter } from 'next/navigation';
 
 export default function QuizDesirePage() {
-  const desireImage = PlaceHolderImages.find((img) => img.id === 'desire');
+  const router = useRouter();
+
+  const handleNext = () => {
+    // This should ideally go to a results page, but for now, let's loop back to the beginning
+    router.push('/');
+  };
 
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
@@ -21,54 +26,49 @@ export default function QuizDesirePage() {
       </div>
 
       <div className="flex flex-col items-center justify-center text-center flex-grow mt-4">
-        {desireImage && (
-            <Image
-              src="https://i.imgur.com/K4vlyQs.png"
-              alt="Mulher abraçando um homem por trás, ambos com roupas formais."
-              width={140}
-              height={140}
-              className="rounded-md object-cover"
-              data-ai-hint="couple desire"
-            />
-        )}
+        <Image
+          src="https://i.imgur.com/K4vlyQs.png"
+          alt="Mulher abraçando um homem por trás, ambos com roupas formais."
+          width={200}
+          height={200}
+          className="rounded-md object-cover"
+          data-ai-hint="couple desire"
+        />
 
         <h1 className="text-xl font-bold leading-tight mt-8">Se você pudesse usar técnicas comprovadas para despertar o desejo de um homem, como isso mudaria sua vida amorosa?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Link href="/quiz/question-4" passHref>
-            <Button
-              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-              style={{
-                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                  border: '1px solid #ef4444',
-              }}
-            >
-              Mudaria completamente. Me sentiria poderosa e desejada
-            </Button>
-          </Link>
-          <Link href="/quiz/question-4" passHref>
-            <Button
-              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-              style={{
-                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                  border: '1px solid #ef4444',
-              }}
-            >
-              Melhoraria muito. Finalmente teria a atenção que mereço
-            </Button>
-          </Link>
-          <Link href="/quiz/question-4" passHref>
-            <Button
-              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-              style={{
-                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                  border: '1px solid #ef4444',
-              }}
-            >
-              Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
-            </Button>
-          </Link>
+          <Button
+            onClick={handleNext}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+            style={{
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
+            }}
+          >
+            Mudaria completamente. Me sentiria poderosa e desejada
+          </Button>
+          <Button
+            onClick={handleNext}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+            style={{
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
+            }}
+          >
+            Melhoraria muito. Finalmente teria a atenção que mereço
+          </Button>
+          <Button
+            onClick={handleNext}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+            style={{
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
+            }}
+          >
+            Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
+          </Button>
         </div>
       </div>
 

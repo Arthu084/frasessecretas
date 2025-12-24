@@ -5,9 +5,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useRouter } from 'next/navigation';
 
 export default function QuizConfidencePage() {
+  const router = useRouter();
   const confidenceImage = PlaceHolderImages.find((img) => img.id === 'confidence');
+  
+  const handleNext = () => {
+    router.push('/quiz/question-3');
+  };
+
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
       <div className="w-full max-w-md mx-auto mt-4">
@@ -24,8 +31,8 @@ export default function QuizConfidencePage() {
             <Image
               src={confidenceImage.imageUrl}
               alt={confidenceImage.description}
-              width={140}
-              height={140}
+              width={200}
+              height={200}
               className="rounded-md object-cover"
               data-ai-hint={confidenceImage.imageHint}
             />
@@ -35,39 +42,36 @@ export default function QuizConfidencePage() {
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Link href="/quiz/question-3" passHref>
-            <Button
-              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-              style={{
+          <Button
+            onClick={handleNext}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+            style={{
+              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+              border: '1px solid #ef4444',
+            }}
+          >
+            Sim, definitivamente. Isso me daria uma nova personalidade
+          </Button>
+          <Button
+            onClick={handleNext}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+            style={{
+              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+              border: '1px solid #ef4444',
+            }}
+          >
+            Sim, muito. Me ajudaria a superar minha timidez e inseguranças
+          </Button>
+          <Button
+            onClick={handleNext}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+            style={{
                 background: 'linear-gradient(to right, #dc2626, #b91c1c)',
                 border: '1px solid #ef4444',
               }}
-            >
-              Sim, definitivamente. Isso me daria uma nova personalidade
-            </Button>
-          </Link>
-          <Link href="/quiz/question-3" passHref>
-            <Button
-              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-              style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-              }}
-            >
-              Sim, muito. Me ajudaria a superar minha timidez e inseguranças
-            </Button>
-          </Link>
-          <Link href="/quiz/question-3" passHref>
-            <Button
-              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-              style={{
-                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                  border: '1px solid #ef4444',
-                }}
-            >
-              Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
-            </Button>
-          </Link>
+          >
+            Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
+          </Button>
         </div>
       </div>
 
