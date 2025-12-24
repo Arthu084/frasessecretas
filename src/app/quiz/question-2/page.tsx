@@ -32,15 +32,15 @@ export default function QuizConfidencePage() {
         )}
 
 
-        <h1 className="text-3xl font-bold leading-tight">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
+        <h1 className="text-2xl font-bold leading-tight">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
             className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
             style={{
-              background: 'linear-gradient(to right, #15803d, #166534)',
-              border: '1px solid #16a34a',
+              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+              border: '1px solid #ef4444',
             }}
           >
             Sim, definitivamente. Isso me daria uma nova personalidade
@@ -48,8 +48,8 @@ export default function QuizConfidencePage() {
           <Button
             className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
             style={{
-              background: 'linear-gradient(to right, #15803d, #166534)',
-              border: '1px solid #16a34a',
+              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+              border: '1px solid #ef4444',
             }}
           >
             Sim, muito. Me ajudaria a superar minha timidez e inseguranças
@@ -57,8 +57,8 @@ export default function QuizConfidencePage() {
           <Button
             className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
             style={{
-                background: 'linear-gradient(to right, #15803d, #166534)',
-                border: '1px solid #16a34a',
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
               }}
           >
             Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
