@@ -17,7 +17,7 @@ export default function QuizGenderPage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center mt-8 flex-grow">
+      <div className="flex flex-col items-center justify-center text-center mt-4 flex-grow">
         <Image
           src="https://i.imgur.com/7Nk42IW.png"
           alt="Ícones de Gênero"

@@ -25,8 +25,8 @@ export default function QuizDesirePage() {
             <Image
               src={desireImage.imageUrl}
               alt={desireImage.description}
-              width={150}
-              height={150}
+              width={200}
+              height={200}
               className="rounded-md object-cover"
               data-ai-hint={desireImage.imageHint}
             />
