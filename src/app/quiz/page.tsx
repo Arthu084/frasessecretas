@@ -17,7 +17,7 @@ export default function QuizGenderPage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center mt-16 flex-grow">
+      <div className="flex flex-col items-center justify-center text-center mt-8 flex-grow">
         <Image
           src="https://i.imgur.com/7Nk42IW.png"
           alt="Ícones de Gênero"
@@ -29,7 +29,7 @@ export default function QuizGenderPage() {
         <p className="text-zinc-400 mt-2">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Link href="/quiz/question-2">
+          <Link href="/quiz/question-2" passHref>
             <Button
               className="w-full text-lg py-6 rounded-lg font-bold text-white"
               style={{
@@ -40,7 +40,7 @@ export default function QuizGenderPage() {
               MULHER
             </Button>
           </Link>
-          <Link href="/quiz/question-2">
+          <Link href="/quiz/question-2" passHref>
             <Button
               className="w-full text-lg py-6 rounded-lg font-bold text-white"
               style={{
@@ -51,7 +51,7 @@ export default function QuizGenderPage() {
               HOMEM
             </Button>
           </Link>
-          <Link href="/quiz/question-2">
+          <Link href="/quiz/question-2" passHref>
             <Button
               variant="outline"
               className="w-full text-lg py-6 rounded-lg font-bold text-zinc-300"

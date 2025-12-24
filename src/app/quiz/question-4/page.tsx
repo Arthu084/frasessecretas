@@ -25,8 +25,8 @@ export default function QuizDesirePage() {
             <Image
               src="https://i.imgur.com/K4vlyQs.png"
               alt="Mulher abraçando um homem por trás, ambos com roupas formais."
-              width={140}
-              height={84}
+              width={100}
+              height={60}
               className="rounded-md object-cover mb-8"
               data-ai-hint="couple desire"
             />
@@ -36,33 +36,39 @@ export default function QuizDesirePage() {
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-            }}
-          >
-            Mudaria completamente. Me sentiria poderosa e desejada
-          </Button>
-          <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-            }}
-          >
-            Melhoraria muito. Finalmente teria a atenção que mereço
-          </Button>
-          <Button
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-            }}
-          >
-            Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
-          </Button>
+          <Link href="/quiz/question-4" passHref>
+            <Button
+              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+              style={{
+                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                  border: '1px solid #ef4444',
+              }}
+            >
+              Mudaria completamente. Me sentiria poderosa e desejada
+            </Button>
+          </Link>
+          <Link href="/quiz/question-4" passHref>
+            <Button
+              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+              style={{
+                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                  border: '1px solid #ef4444',
+              }}
+            >
+              Melhoraria muito. Finalmente teria a atenção que mereço
+            </Button>
+          </Link>
+          <Link href="/quiz/question-4" passHref>
+            <Button
+              className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
+              style={{
+                  background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                  border: '1px solid #ef4444',
+              }}
+            >
+              Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
+            </Button>
+          </Link>
         </div>
       </div>
 

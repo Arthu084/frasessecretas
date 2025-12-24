@@ -25,8 +25,8 @@ export default function QuizDesirePage() {
             <Image
               src={desireImage.imageUrl}
               alt={desireImage.description}
-              width={140}
-              height={84}
+              width={100}
+              height={60}
               className="rounded-md object-cover mb-8"
               data-ai-hint={desireImage.imageHint}
             />
@@ -36,7 +36,7 @@ export default function QuizDesirePage() {
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Link href="/quiz/question-4">
+          <Link href="/quiz/question-4" passHref>
             <Button
               className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
               style={{
@@ -47,7 +47,7 @@ export default function QuizDesirePage() {
               Mudaria completamente. Me sentiria poderosa e desejada
             </Button>
           </Link>
-          <Link href="/quiz/question-4">
+          <Link href="/quiz/question-4" passHref>
             <Button
               className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
               style={{
@@ -58,7 +58,7 @@ export default function QuizDesirePage() {
               Melhoraria muito. Finalmente teria a atenção que mereço
             </Button>
           </Link>
-          <Link href="/quiz/question-4">
+          <Link href="/quiz/question-4" passHref>
             <Button
               className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
               style={{

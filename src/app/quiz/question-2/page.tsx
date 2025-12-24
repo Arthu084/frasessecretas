@@ -24,8 +24,8 @@ export default function QuizConfidencePage() {
             <Image
               src={confidenceImage.imageUrl}
               alt={confidenceImage.description}
-              width={140}
-              height={84}
+              width={100}
+              height={60}
               className="rounded-md object-cover mb-8"
               data-ai-hint={confidenceImage.imageHint}
             />
@@ -35,7 +35,7 @@ export default function QuizConfidencePage() {
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Link href="/quiz/question-3">
+          <Link href="/quiz/question-3" passHref>
             <Button
               className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
               style={{
@@ -46,7 +46,7 @@ export default function QuizConfidencePage() {
               Sim, definitivamente. Isso me daria uma nova personalidade
             </Button>
           </Link>
-          <Link href="/quiz/question-3">
+          <Link href="/quiz/question-3" passHref>
             <Button
               className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
               style={{
@@ -57,7 +57,7 @@ export default function QuizConfidencePage() {
               Sim, muito. Me ajudaria a superar minha timidez e inseguranças
             </Button>
           </Link>
-          <Link href="/quiz/question-3">
+          <Link href="/quiz/question-3" passHref>
             <Button
               className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
               style={{
