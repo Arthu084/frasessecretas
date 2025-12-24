@@ -9,22 +9,20 @@ export default function QuizPage() {
   const secretImage = PlaceHolderImages.find((img) => img.id === 'secret');
 
   return (
-    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans">
-      <div className="absolute top-0 left-0 w-full h-1/3">
-        {secretImage && (
-          <Image
-            src={secretImage.imageUrl}
-            alt={secretImage.description}
-            fill
-            style={{ objectFit: 'cover' }}
-            className="opacity-50"
-            data-ai-hint={secretImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
-      </div>
+    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans">
+      {secretImage && (
+        <Image
+          src={secretImage.imageUrl}
+          alt={secretImage.description}
+          fill
+          style={{ objectFit: 'cover' }}
+          className="opacity-30"
+          data-ai-hint={secretImage.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-48">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center p-4">
         <h1 className="text-3xl md:text-4xl font-bold leading-tight">
           Descubra como deixar <br /> ele <span className="text-red-500">obcecado</span> por você
         </h1>
