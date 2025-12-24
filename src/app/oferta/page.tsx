@@ -25,7 +25,7 @@ export default function OfferPage() {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-12">
           <p className="text-base md:text-lg font-semibold tracking-wider uppercase">
-            Envie essas <span className="text-red-500 font-bold">Frases Discretas</span> para ele...
+            Envie essas <span className="text-red-500 font-bold">Frases Discretas</span>
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mt-4 leading-tight">
             E ele ficará <span className="text-cyan-400">obcecado</span> por você
