@@ -5,8 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export default function ResultsPage() {
-  // TODO: Add the correct link for the final button
-  const finalLink = "/";
+  const finalLink = "/oferta";
 
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans p-4">
@@ -31,7 +30,7 @@ export default function ResultsPage() {
             </Button>
         </Link>
       </div>
-      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
+      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
         <Link href="/quiz/question-4">
           <Button variant="outline" size="icon">
             <ArrowLeft />
