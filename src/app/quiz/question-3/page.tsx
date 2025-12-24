@@ -7,7 +7,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function QuizDesirePage() {
-  const desireImage = PlaceHolderImages.find((img) => img.id === 'desire');
+  const desireImage = {
+      id: "desire",
+      description: "Mulher abraçando um homem por trás, ambos com roupas formais.",
+      imageUrl: "https://imgur.com/K4vlyQs",
+      imageHint: "couple desire"
+    };
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
       <div className="w-full max-w-md mx-auto mt-4">
@@ -39,8 +44,8 @@ export default function QuizDesirePage() {
           <Button
             className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
             style={{
-                background: 'linear-gradient(to right, #2563eb, #1d4ed8)',
-                border: '1px solid #2563eb',
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
             }}
           >
             Mudaria completamente. Me sentiria poderosa e desejada
@@ -48,8 +53,8 @@ export default function QuizDesirePage() {
           <Button
             className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
             style={{
-                background: 'linear-gradient(to right, #2563eb, #1d4ed8)',
-                border: '1px solid #2563eb',
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
             }}
           >
             Melhoraria muito. Finalmente teria a atenção que mereço
@@ -57,8 +62,8 @@ export default function QuizDesirePage() {
           <Button
             className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
             style={{
-                background: 'linear-gradient(to right, #2563eb, #1d4ed8)',
-                border: '1px solid #2563eb',
+                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
+                border: '1px solid #ef4444',
             }}
           >
             Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
