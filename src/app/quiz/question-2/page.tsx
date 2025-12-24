@@ -32,12 +32,12 @@ export default function QuizConfidencePage() {
         )}
 
 
-        <h1 className="text-2xl font-bold leading-tight">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
+        <h1 className="text-xl font-bold leading-tight">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
-            className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
             style={{
               background: 'linear-gradient(to right, #dc2626, #b91c1c)',
               border: '1px solid #ef4444',
@@ -46,7 +46,7 @@ export default function QuizConfidencePage() {
             Sim, definitivamente. Isso me daria uma nova personalidade
           </Button>
           <Button
-            className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
             style={{
               background: 'linear-gradient(to right, #dc2626, #b91c1c)',
               border: '1px solid #ef4444',
@@ -55,7 +55,7 @@ export default function QuizConfidencePage() {
             Sim, muito. Me ajudaria a superar minha timidez e inseguranças
           </Button>
           <Button
-            className="w-full text-base py-6 rounded-lg font-bold text-white whitespace-normal h-auto"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
             style={{
                 background: 'linear-gradient(to right, #dc2626, #b91c1c)',
                 border: '1px solid #ef4444',
