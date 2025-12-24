@@ -38,16 +38,28 @@ export default function QuizDesirePage() {
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
             className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
+            style={{
+                background: 'linear-gradient(to right, #2563eb, #1d4ed8)',
+                border: '1px solid #2563eb',
+            }}
           >
             Mudaria completamente. Me sentiria poderosa e desejada
           </Button>
           <Button
             className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
+            style={{
+                background: 'linear-gradient(to right, #2563eb, #1d4ed8)',
+                border: '1px solid #2563eb',
+            }}
           >
             Melhoraria muito. Finalmente teria a atenção que mereço
           </Button>
           <Button
             className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto"
+            style={{
+                background: 'linear-gradient(to right, #2563eb, #1d4ed8)',
+                border: '1px solid #2563eb',
+            }}
           >
             Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
           </Button>
