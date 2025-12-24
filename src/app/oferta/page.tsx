@@ -28,7 +28,7 @@ export default function OfferPage() {
             Envie essas <span className="text-red-500 font-bold">Frases Discretas</span>
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mt-4 leading-tight">
-            E ele ficará <span className="text-cyan-400">obcecado</span> por você
+            E ele ficará <span className="text-red-500">obcecado</span> por você
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
             Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por atenção. Ele simplesmente não terá olhos para mais ninguém.
@@ -38,7 +38,7 @@ export default function OfferPage() {
         <section className="bg-zinc-900 py-12 px-4 rounded-xl shadow-lg my-16">
             <div className="text-center mb-8">
                 <h3 className="text-2xl md:text-3xl font-bold">
-                    Confira o que dizem as mulheres que usaram as <span className="text-cyan-400">Frases Discretas</span>
+                    Confira o que dizem as mulheres que usaram as <span className="text-red-500">Frases Discretas</span>
                 </h3>
                 <p className="text-lg md:text-xl text-zinc-300 mt-2">
                     Elas conseguiram o homem que tanto desejavam...
