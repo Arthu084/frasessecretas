@@ -12,7 +12,7 @@ export default function ResultsPage() {
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans p-4">
       <div className="flex flex-col items-center justify-center text-center flex-grow">
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
-          PARABÉNS, VOCÊ FOI <br/> SELECIONADA PARA TER ACESSO <br/> A ESSE <span className="text-red-500">SEGREDO</span> <br/> <span className="text-red-500">DA SEDUÇÃO</span>
+          PARABÉNS, VOCÊ FOI <br/> SELECIONADA PARA TER <br/> ACESSO A ESSE <br/> <span className="text-red-500">SEGREDO DA SEDUÇÃO</span>
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
