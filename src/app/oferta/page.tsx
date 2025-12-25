@@ -28,7 +28,7 @@ export default function OfferPage() {
             Envie essas <span className="text-red-500 font-bold">Frases Discretas</span>
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mt-4 leading-tight">
-            E ele ficará <span className="text-red-500">obcecado</span> por você
+            E ele ficará <br /> <span className="text-red-500">obcecado</span> por você
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
             Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por atenção. Ele simplesmente não terá olhos para mais ninguém.
