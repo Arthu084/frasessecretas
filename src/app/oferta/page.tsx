@@ -119,14 +119,16 @@ export default function OfferPage() {
         </section>
 
         <section className="text-center my-12">
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
           </h2>
           <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
             <p>
               O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
-              <span className="font-bold text-red-400">dopamina</span>. Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo.
+              <span className="font-bold text-red-400">dopamina</span>. Na
+              maioria das vezes, a única fonte de dopamina do relacionamento é o
+              sexo
             </p>
             <p>
               O que você realmente precisa fazer é <span className="font-bold text-red-500">deixá-lo viciado em você</span>, e não apenas no que vocês fazem na cama.
@@ -137,22 +139,22 @@ export default function OfferPage() {
         <section className="my-16">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-md mx-auto">
               <div className="mb-6">
-                <p className="text-sm text-left">
+                <p className="text-sm text-center">
                     Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
                 </p>
               </div>
               <hr className="border-t border-zinc-700 mb-6"/>
-              <p className="text-left text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
+              <p className="text-center text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
               <ul className="space-y-4">
                   {problems.map((problem, index) => (
-                      <li key={index} className="flex flex-col">
+                      <li key={index} className="flex flex-col items-center">
                           <div className='flex items-center gap-4'>
                             <div className="bg-red-600 rounded-full p-2 flex-shrink-0">
                                 <X className="text-white h-6 w-6" />
                             </div>
                             <span className="font-bold text-lg">{problem}</span>
                           </div>
-                          {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4"/>}
+                          {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4 w-full"/>}
                       </li>
                   ))}
               </ul>
