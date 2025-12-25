@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ResultsPage() {
   const finalLink = "/oferta";
@@ -10,6 +11,15 @@ export default function ResultsPage() {
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans p-4">
       <div className="flex flex-col items-center justify-center text-center flex-grow">
+        
+        <Image
+            src="https://i.imgur.com/EhUv9ej.png"
+            alt="Troféu"
+            width={200}
+            height={200}
+            className="mb-8"
+        />
+
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           PARABÉNS, VOCÊ FOI <br/> SELECIONADA PARA TER <br/> ACESSO A ESSE <br/> <span className="text-red-500">SEGREDO DA SEDUÇÃO</span>
         </h1>
