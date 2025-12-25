@@ -132,7 +132,7 @@ export default function OfferPage() {
               O que você realmente precisa fazer é <span className="font-bold text-red-500">deixá-lo viciado em você</span>, e não apenas no que vocês fazem na cama.
             </p>
             <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-4 my-6">
-                <p className="text-base text-left">
+                <p className="text-sm text-left">
                     Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
                 </p>
             </div>
