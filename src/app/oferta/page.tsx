@@ -244,7 +244,7 @@ export default function OfferPage() {
               <a href={ofertaLink} className="inline-block w-full max-w-md">
                 <Button
                   size="lg"
-                  className="w-full h-auto text-base font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                  className="w-full h-auto text-base font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-pulse-slow"
                 >
                   SIM, QUERO ACESSO IMEDIATO
                 </Button>
