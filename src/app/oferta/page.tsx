@@ -207,11 +207,11 @@ export default function OfferPage() {
         <section className="my-8">
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
             <CardContent className="p-6 md:p-8 text-center text-white">
-              <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
+              <CardTitle className="text-2xl md:text-3xl font-extrabold tracking-tight">
                 O SEGREDO DAS
                 <br />
                 FRASES DISCRETAS
-              </h2>
+              </CardTitle>
               <p className="mt-3 text-base md:text-lg font-medium">
                 Acesso Imediato a<br />
                 Todas as Frases Secretas
@@ -257,8 +257,8 @@ export default function OfferPage() {
         </section>
 
         <section className="my-12">
-          <h2 className="text-center text-3xl font-bold text-red-500 mb-8">
-            DÚVIDAS FREQUENTES
+          <h2 className="text-center text-3xl font-bold text-white mb-8">
+            Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
             {faqItems.map((item, index) => (
