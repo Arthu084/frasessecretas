@@ -28,7 +28,7 @@ export default function OfferPage() {
 
   const ofertaLink =
     'https://pay.kirvano.com/e8a75e38-406a-4d2b-9e48-e8a4a589a80e';
-    
+
   React.useEffect(() => {
     if (!api) {
       return;
@@ -59,7 +59,7 @@ export default function OfferPage() {
           </h2>
         </header>
 
-        <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-8">
+        <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-4">
           <div className="text-center mb-4">
             <h3 className="text-2xl md:text-3xl font-bold">
               Confira o que dizem as mulheres que usaram as{' '}
@@ -98,34 +98,37 @@ export default function OfferPage() {
           </Carousel>
           <div className="py-4 text-center text-sm text-muted-foreground">
             <div className="flex items-center justify-center gap-2 mb-2">
-                {Array.from({ length: count }).map((_, i) => (
-                    <span
-                        key={i}
-                        className={`block h-2 w-2 rounded-full ${current - 1 === i ? 'bg-white' : 'bg-zinc-600'}`}
-                    />
-                ))}
+              {Array.from({ length: count }).map((_, i) => (
+                <span
+                  key={i}
+                  className={`block h-2 w-2 rounded-full ${
+                    current - 1 === i ? 'bg-white' : 'bg-zinc-600'
+                  }`}
+                />
+              ))}
             </div>
             Arraste para o lado
           </div>
         </section>
 
         <section className="text-center my-20">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Você já se perguntou por que os homens{' '}
-            <span className="text-red-500">só pensam em sexo?</span>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase">
+            Você já se perguntou <br /> por que os homens só <br />{' '}
+            <span className="text-red-500">pensam em sexo?</span>
           </h2>
-          <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-4 text-zinc-300">
+          <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200">
             <p>
-              A resposta está na{' '}
-              <span className="text-red-400 font-bold">dopamina</span>, um
-              neurotransmissor liberado no cérebro masculino que causa uma
-              intensa sensação de prazer e recompensa.
+              O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
+              <span className="font-bold text-red-400">dopamina</span>.
             </p>
             <p>
-              Na maioria das vezes, a única fonte de dopamina em um
-              relacionamento acaba sendo o sexo. Mas e se você pudesse se
-              tornar a principal fonte de dopamina para ele, muito além da
-              intimidade?
+              Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo.
+            </p>
+            <p className="font-bold uppercase text-white">
+              O que você realmente precisa fazer é deixá-lo viciado em você, e não apenas no que vocês fazem na cama.
+            </p>
+            <p>
+              Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
             </p>
           </div>
         </section>
@@ -157,7 +160,7 @@ export default function OfferPage() {
                   size="lg"
                   className="w-full h-auto text-base font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
                 >
-                  SIM, QUERO ACESSO IMEDIATO!
+                  SIM, QUERO ACESSO IMEDIATO
                 </Button>
               </a>
               <p className="text-xs mt-4 text-rose-200">
