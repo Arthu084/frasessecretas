@@ -161,7 +161,7 @@ export default function OfferPage() {
         </section>
 
 
-        <section className="my-16">
+        <section className="my-8">
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
             <CardContent className="p-6 md:p-8 text-center text-white">
               <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
