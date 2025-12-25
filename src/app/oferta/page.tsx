@@ -58,7 +58,7 @@ export default function OfferPage() {
           </h2>
         </header>
 
-        <section className="bg-zinc-900 py-12 px-4 rounded-xl shadow-lg my-16">
+        <section className="bg-zinc-900 py-12 px-4 rounded-xl shadow-lg my-8">
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold">
               Confira o que dizem as mulheres que usaram as{' '}
