@@ -217,10 +217,10 @@ export default function OfferPage() {
               </p>
 
               <div className="my-6">
-                <span className="text-base line-through text-rose-200">
+                <span className="text-lg line-through text-rose-200">
                   DE R$97,00
                 </span>
-                <p className="text-4xl md:text-5xl font-black my-1">
+                <p className="text-3xl font-black my-1">
                   POR APENAS R$9,90
                 </p>
                 <p className="text-sm font-medium text-rose-100">
@@ -255,8 +255,8 @@ export default function OfferPage() {
           </Card>
         </section>
 
-        <section className="mt-12 mb-4">
-          <h2 className="text-center text-base text-white mb-8">
+        <section className="mb-4">
+          <h2 className="text-center text-sm text-white mb-8">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
