@@ -14,6 +14,12 @@ import {
 import { CheckCircle, X } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 export default function OfferPage() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -45,24 +51,55 @@ export default function OfferPage() {
   }, [api]);
 
   const problems = [
-      {title: "Medo de ser rejeitada"},
-      {title: "Dificuldade em entender o comportamento masculino"},
-      {title: "Desconhece a comunicação sedutora"},
-  ]
+    { title: 'Medo de ser rejeitada' },
+    { title: 'Dificuldade em entender o comportamento masculino' },
+    { title: 'Desconhece a comunicação sedutora' },
+  ];
 
   const benefits = [
     'Técnicas de comunicação secreta',
     'Frases para usar no WhatsApp',
     'Como se tornar uma mulher magnética',
-  ]
+    'Bônus: Guia de Confiança Inabalável',
+  ];
+
+  const faqItems = [
+    {
+      question: 'Isso vai funcionar pra mim?',
+      answer:
+        'Sim! As Frases Discretas foram desenvolvidas com base em estudos de comportamento e funcionam para qualquer mulher, independentemente da idade ou tipo de relacionamento que você busca.',
+    },
+    {
+      question: 'O que vou receber?',
+      answer:
+        'Você receberá acesso imediato e vitalício a um guia completo com todas as Frases Discretas, exemplos práticos de como e quando usá-las, além de bônus exclusivos para acelerar seus resultados.',
+    },
+    {
+      question: 'O que acontece depois que eu fizer a minha inscrição?',
+      answer:
+        'Após a confirmação do pagamento, você receberá um e-mail com os dados de acesso à nossa área de membros exclusiva, onde todo o material estará disponível para você acessar quando e onde quiser.',
+    },
+    {
+      question: 'Quais as formas de pagamento?',
+      answer:
+        'Aceitamos as principais formas de pagamento, como Cartão de Crédito em até 12x, PIX e Boleto Bancário. Pagamentos com PIX e Cartão de Crédito têm liberação imediata.',
+    },
+    {
+      question: 'Tem garantia?',
+      answer:
+        'Sim! Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeita, basta solicitar o reembolso e devolveremos 100% do seu dinheiro, sem perguntas.',
+    },
+  ];
 
   return (
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-extrabold leading-tight">
-            Envie essas <span className="text-red-500">Frases</span><br />
-            <span className="text-red-500">Discretas</span> e ele ficará<br />
+            Envie essas <span className="text-red-500">Frases</span>
+            <br />
+            <span className="text-red-500">Discretas</span> e ele ficará
+            <br />
             obcecado por você!
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
@@ -138,37 +175,46 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className='my-8'>
-            <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
-                <p className="text-left text-zinc-300 mb-6">Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:</p>
-                <hr className="border-t border-zinc-700 mb-6"/>
-                <ul className="space-y-4">
-                    {problems.map((problem, index) => (
-                        <li key={index} className="flex flex-col">
-                            <div className='flex items-center gap-4'>
-                              <div className="bg-red-600 rounded-full p-2 flex-shrink-0">
-                                  <X className="text-white h-6 w-6" />
-                              </div>
-                              <div className='text-left'>
-                                <span className="font-bold text-lg">{problem.title}</span>
-                              </div>
-                            </div>
-                            {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4 w-full"/>}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        <section className="my-4">
+          <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
+            <p className="text-left text-zinc-300 mb-6">
+              Baseado nas suas respostas, você não consegue atrair o homem que
+              deseja por causa desses problemas:
+            </p>
+            <hr className="border-t border-zinc-700 mb-6" />
+            <ul className="space-y-4">
+              {problems.map((problem, index) => (
+                <li key={index} className="flex flex-col">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-red-600 rounded-full p-2 flex-shrink-0 mt-1">
+                      <X className="text-white h-6 w-6" />
+                    </div>
+                    <div className="text-left">
+                      <span className="font-bold text-lg">
+                        {problem.title}
+                      </span>
+                    </div>
+                  </div>
+                  {index < problems.length - 1 && (
+                    <hr className="border-t border-zinc-700 mt-4 w-full" />
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
-
 
         <section className="my-8">
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
             <CardContent className="p-6 md:p-8 text-center text-white">
               <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-                O SEGREDO DAS<br />FRASES DISCRETAS
+                O SEGREDO DAS
+                <br />
+                FRASES DISCRETAS
               </h2>
               <p className="mt-3 text-base md:text-lg font-medium">
-                Acesso Imediato a<br />Todas as Frases Secretas
+                Acesso Imediato a<br />
+                Todas as Frases Secretas
               </p>
 
               <div className="my-6">
@@ -209,7 +255,34 @@ export default function OfferPage() {
             </CardContent>
           </Card>
         </section>
+
+        <section className="my-12">
+          <h2 className="text-center text-3xl font-bold text-red-500 mb-8">
+            DÚVIDAS FREQUENTES
+          </h2>
+          <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
+            {faqItems.map((item, index) => (
+              <AccordionItem value={`item-${index}`} key={index} className="border-b-zinc-700">
+                <AccordionTrigger className="text-lg text-left font-semibold hover:no-underline p-4">
+                  {item.question}
+                </AccordionTrigger>
+                <AccordionContent className="p-4 pt-0 text-zinc-300">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </section>
       </div>
+      <footer className="w-full bg-zinc-900 py-8 mt-8">
+          <div className="container mx-auto px-4 text-center text-zinc-400 text-sm">
+              <p>Copyright © 2024. Todos os direitos reservados</p>
+              <div className="flex justify-center items-center gap-4 mt-4">
+                  <Image src="https://i.imgur.com/Amz42te.png" alt="Selo SSL Blindado" width={100} height={40} />
+                  <Image src="https://i.imgur.com/v8rXpBv.png" alt="Selo Site Blindado" width={100} height={40} />
+              </div>
+          </div>
+      </footer>
     </div>
   );
 }
