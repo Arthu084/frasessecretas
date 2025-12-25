@@ -118,9 +118,10 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-12">
+        <section className="text-center my-8">
           <h2 className="text-3xl md:text-5xl font-bold">
-            Você já se perguntou por que os homens só pensam em sexo?
+            Você já se perguntou por que os homens só{' '}
+            <span className="text-red-500">pensam em sexo</span>?
           </h2>
           <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
             <p>
