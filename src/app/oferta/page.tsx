@@ -95,7 +95,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-3xl font-extrabold leading-tight">
+          <h1 className="text-3xl font-bold leading-tight">
             Envie essas <span className="text-red-500">Frases</span>
             <br />
             <span className="text-red-500">Discretas</span> e ele ficará
@@ -160,7 +160,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-8">
+        <section className="text-center my-4">
           <h2 className="text-3xl md:text-4xl font-bold">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
@@ -175,7 +175,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="my-4">
+        <section className="my-8">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
             <p className="text-left text-zinc-300 mb-6">
               Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:
@@ -256,7 +256,7 @@ export default function OfferPage() {
         </section>
 
         <section className="my-12">
-          <h2 className="text-center text-2xl text-white mb-8">
+          <h2 className="text-center text-xl text-white mb-8">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
@@ -275,8 +275,9 @@ export default function OfferPage() {
       </div>
       <footer className="w-full bg-zinc-900 py-8 mt-8">
           <div className="container mx-auto px-4 text-center text-zinc-400 text-sm">
-              <p>Copyright © 2024. Todos os direitos reservados</p>
+              <p>Copyright © 2025. Todos os direitos reservados</p>
               <div className="flex justify-center items-center gap-4 mt-4">
+                  <Image src="https://i.imgur.com/5FVeChe.png" alt="Selo de Garantia" width={140} height={50} />
                   <Image src="https://i.imgur.com/Amz42te.png" alt="Selo SSL Blindado" width={100} height={40} />
                   <Image src="https://i.imgur.com/v8rXpBv.png" alt="Selo Site Blindado" width={100} height={40} />
               </div>
