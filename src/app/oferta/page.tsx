@@ -23,6 +23,7 @@ export default function OfferPage() {
     'https://i.imgur.com/b9g9DgY.png',
     'https://i.imgur.com/Q3v8IMb.png',
     'https://i.imgur.com/w4T8DCl.png',
+    'https://i.imgur.com/mtW4h1x.png',
   ];
 
   const ofertaLink =
