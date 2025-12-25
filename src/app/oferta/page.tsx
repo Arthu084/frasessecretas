@@ -122,7 +122,7 @@ export default function OfferPage() {
           <h2 className="text-3xl md:text-5xl font-bold">
             Você já se perguntou por que os homens só pensam em sexo?
           </h2>
-          <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-left">
+          <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
             <p>
               O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
               <span className="font-bold text-red-400">dopamina</span>. Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo.
