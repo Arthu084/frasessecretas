@@ -118,7 +118,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-12">
+        <section className="text-center my-4">
           <h2 className="text-3xl md:text-4xl font-bold">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
@@ -140,7 +140,7 @@ export default function OfferPage() {
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-md mx-auto">
               <div className="mb-6">
                 <p className="text-sm text-center">
-                    Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
+                    Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> <span className="font-bold">que deixam qualquer homem viciado em você!</span>
                 </p>
               </div>
               <hr className="border-t border-zinc-700 mb-6"/>
