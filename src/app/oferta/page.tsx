@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -53,8 +54,8 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-2xl md:text-4xl font-extrabold leading-tight">
-            Envie essas <span className="text-red-500">Frases Discretas</span> <br /> e ele ficará <span className="text-red-500">obcecado</span> por você
+          <h1 className="text-2xl md:text-3xl font-extrabold leading-tight">
+            Envie essas <span className="text-red-500">Frases Discretas</span> e <br /> ele ficará <span className="text-red-500">obcecado</span> por você
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
             Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por
@@ -62,7 +63,7 @@ export default function OfferPage() {
           </h2>
         </header>
 
-        <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-8">
+        <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-4">
           <div className="text-center mb-4">
             <h3 className="text-2xl md:text-3xl font-bold">
               Confira o que dizem as mulheres que usaram as{' '}
@@ -114,7 +115,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-4">
+        <section className="text-center my-16">
           <h2 className="text-3xl md:text-4xl font-bold">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
@@ -124,7 +125,7 @@ export default function OfferPage() {
               O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
               <span className="font-bold text-red-400">dopamina</span>. Na
               maioria das vezes, a única fonte de dopamina do relacionamento é o
-              sexo
+              sexo.
             </p>
             <p>
               O que você realmente precisa fazer é <span className="font-bold text-red-500">deixá-lo viciado em você</span>, e não apenas no que vocês fazem na cama.
@@ -135,12 +136,9 @@ export default function OfferPage() {
         <section className="my-16">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-md mx-auto">
               <div className="mb-6">
-                <p className="text-sm text-center">
-                    Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> <span className="font-bold">que deixam qualquer homem viciado em você!</span>
-                </p>
+                <p className="text-center text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
               </div>
               <hr className="border-t border-zinc-700 mb-6"/>
-              <p className="text-center text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
               <ul className="space-y-4">
                   {problems.map((problem, index) => (
                       <li key={index} className="flex flex-col items-center">
@@ -148,7 +146,7 @@ export default function OfferPage() {
                             <div className="bg-red-600 rounded-full p-2 flex-shrink-0">
                                 <X className="text-white h-6 w-6" />
                             </div>
-                            <span className="font-bold text-lg">{problem}</span>
+                            <span className="font-bold text-lg text-center">{problem}</span>
                           </div>
                           {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4 w-full"/>}
                       </li>
