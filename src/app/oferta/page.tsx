@@ -45,9 +45,9 @@ export default function OfferPage() {
   }, [api]);
 
   const problems = [
-      "MEDO DE SER REJEITADA",
-      "DIFICULDADE EM ENTENDER O COMPORTAMENTO MASCULINO",
-      "DESCONHECE A COMUNICAÇÃO SEDUTORA",
+      "Medo de ser rejeitada",
+      "Dificuldade em entender o comportamento masculino",
+      "Desconhece a comunicação sedutora",
   ]
 
   return (
@@ -137,12 +137,12 @@ export default function OfferPage() {
                 <hr className="border-t border-zinc-700 mb-6"/>
                 <ul className="space-y-4">
                     {problems.map((problem, index) => (
-                        <li key={index} className="flex flex-col items-center">
+                        <li key={index} className="flex flex-col">
                             <div className='flex items-center gap-4'>
                               <div className="bg-red-600 rounded-full p-2 flex-shrink-0">
                                   <X className="text-white h-6 w-6" />
                               </div>
-                              <span className="font-bold text-lg text-center">{problem}</span>
+                              <span className="font-bold text-lg">{problem}</span>
                             </div>
                             {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4 w-full"/>}
                         </li>
