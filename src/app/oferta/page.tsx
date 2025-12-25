@@ -276,13 +276,13 @@ export default function OfferPage() {
       <footer className="w-full bg-zinc-900 py-8 mt-8">
           <div className="container mx-auto px-4 text-center text-zinc-400 text-sm">
               <p>Copyright © 2025. Todos os direitos reservados</p>
-              <div className="flex justify-center items-center gap-4 mt-4">
+              <div className="flex justify-center items-center mt-4">
                   <Image src="https://i.imgur.com/5FVeChe.png" alt="Selo de Garantia" width={140} height={50} />
-                  <Image src="https://i.imgur.com/Amz42te.png" alt="Selo SSL Blindado" width={100} height={40} />
-                  <Image src="https://i.imgur.com/v8rXpBv.png" alt="Selo Site Blindado" width={100} height={40} />
               </div>
           </div>
       </footer>
     </div>
   );
 }
+
+    
