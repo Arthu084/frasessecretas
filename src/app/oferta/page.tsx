@@ -11,7 +11,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/carousel';
-import { CheckCircle, X } from 'lucide-react';
+import { CheckCircle, Gift, X } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 import {
@@ -234,7 +234,11 @@ export default function OfferPage() {
                 <ul className="space-y-3">
                   {benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-6 w-6 text-green-400 mt-0.5 flex-shrink-0" />
+                      {benefit.startsWith('Bônus:') ? (
+                        <Gift className="h-6 w-6 text-yellow-400 mt-0.5 flex-shrink-0" />
+                      ) : (
+                        <CheckCircle className="h-6 w-6 text-green-400 mt-0.5 flex-shrink-0" />
+                      )}
                       <span className="text-base font-medium">{benefit}</span>
                     </li>
                   ))}
