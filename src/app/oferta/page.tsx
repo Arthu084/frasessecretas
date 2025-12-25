@@ -126,10 +126,7 @@ export default function OfferPage() {
           <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200">
             <p>
               O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
-              <span className="font-bold text-red-400">dopamina</span>.
-            </p>
-            <p>
-              Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo.
+              <span className="font-bold text-red-400">dopamina</span>. Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo.
             </p>
             <p className="text-white">
               O que você realmente precisa fazer é <span className="font-bold text-red-500">deixá-lo viciado em você</span>, e não apenas no que vocês fazem na cama.
