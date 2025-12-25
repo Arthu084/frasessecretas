@@ -203,7 +203,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="my-8">
+        <section className="my-12">
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
             <CardContent className="p-6 md:p-8 text-center text-white">
               <CardTitle className="text-2xl md:text-3xl font-extrabold tracking-tight">
@@ -277,7 +277,7 @@ export default function OfferPage() {
           <div className="container mx-auto px-4 text-center text-zinc-400 text-sm">
               <p>Copyright © 2025. Todos os direitos reservados</p>
               <div className="flex justify-center items-center mt-4">
-                  <Image src="https://i.imgur.com/5FVeChe.png" alt="Selo de Garantia" width={140} height={50} />
+                  <Image src="https://i.imgur.com/5FVeChe.png" alt="Selo de Garantia" width={180} height={64} />
               </div>
           </div>
       </footer>
