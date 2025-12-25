@@ -220,7 +220,7 @@ export default function OfferPage() {
                 <span className="text-lg line-through text-rose-200">
                   DE R$97,00
                 </span>
-                <p className="text-xl font-black my-1">
+                <p className="text-2xl md:text-3xl font-extrabold my-1">
                   POR APENAS
                   <br />
                   R$17,00
