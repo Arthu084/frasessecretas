@@ -124,8 +124,8 @@ export default function OfferPage() {
             <p>
               Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo.
             </p>
-            <p className="font-bold uppercase text-white">
-              O que você realmente precisa fazer é deixá-lo viciado em você, e não apenas no que vocês fazem na cama.
+            <p className="uppercase text-white">
+              O que você realmente precisa fazer é <span className="font-bold">deixá-lo viciado em você</span>, e não apenas no que vocês fazem na cama.
             </p>
             <p>
               Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
