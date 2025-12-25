@@ -13,9 +13,10 @@ import Image from 'next/image';
 
 export default function OfferPage() {
   const testimonials = [
-    'https://i.imgur.com/G2T1aIu.png',
-    'https://i.imgur.com/g89ZRv6.png',
-    'https://i.imgur.com/6X9mY9d.png',
+    'https://i.imgur.com/26lE51Q.png',
+    'https://i.imgur.com/b9g9DgY.png',
+    'https://i.imgur.com/Q3v8IMb.png',
+    'https://i.imgur.com/w4T8DCl.png',
   ];
   
   const ofertaLink = "https://pay.kirvano.com/e8a75e38-406a-4d2b-9e48-e8a4a589a80e";
@@ -99,7 +100,7 @@ export default function OfferPage() {
               </div>
 
               <a href={ofertaLink} className="inline-block w-full max-w-md">
-                <Button size="lg" className="w-full h-auto text-lg font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <Button size="lg" className="w-full h-auto text-base font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
                   SIM, QUERO ACESSO IMEDIATO!
                 </Button>
               </a>
