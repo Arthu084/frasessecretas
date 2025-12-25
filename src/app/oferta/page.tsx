@@ -52,7 +52,7 @@ export default function OfferPage() {
   return (
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
-        <header className="text-center mb-12">
+        <header className="text-center mb-8">
           <p className="text-lg md:text-xl font-semibold tracking-wider uppercase">
             Envie essas <span className="text-red-500">Frases Discretas</span>
           </p>
@@ -66,7 +66,7 @@ export default function OfferPage() {
           </h2>
         </header>
 
-        <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-4">
+        <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-8">
           <div className="text-center mb-4">
             <h3 className="text-2xl md:text-3xl font-bold">
               Confira o que dizem as mulheres que usaram as{' '}
@@ -118,7 +118,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-8">
+        <section className="text-center my-12">
           <h2 className="text-3xl md:text-5xl font-bold">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
@@ -131,17 +131,18 @@ export default function OfferPage() {
             <p>
               O que você realmente precisa fazer é <span className="font-bold text-red-500">deixá-lo viciado em você</span>, e não apenas no que vocês fazem na cama.
             </p>
-            <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-4 my-6">
-                <p className="text-sm text-left">
-                    Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
-                </p>
-            </div>
           </div>
         </section>
 
         <section className="my-16">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-md mx-auto">
-              <p className="text-center text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
+              <div className="mb-6">
+                <p className="text-sm text-left">
+                    Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
+                </p>
+              </div>
+              <hr className="border-t border-zinc-700 mb-6"/>
+              <p className="text-left text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
               <ul className="space-y-4">
                   {problems.map((problem, index) => (
                       <li key={index} className="flex flex-col">
