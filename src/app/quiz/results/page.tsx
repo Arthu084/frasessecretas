@@ -15,8 +15,8 @@ export default function ResultsPage() {
         <Image
             src="https://i.imgur.com/EhUv9ej.png"
             alt="Troféu"
-            width={120}
-            height={120}
+            width={80}
+            height={80}
             className="mb-8"
         />
 
