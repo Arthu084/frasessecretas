@@ -178,8 +178,7 @@ export default function OfferPage() {
         <section className="my-4">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
             <p className="text-left text-zinc-300 mb-6">
-              Baseado nas suas respostas, você não consegue atrair o homem que
-              deseja por causa desses problemas:
+              Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:
             </p>
             <hr className="border-t border-zinc-700 mb-6" />
             <ul className="space-y-4">
@@ -257,13 +256,13 @@ export default function OfferPage() {
         </section>
 
         <section className="my-12">
-          <h2 className="text-center text-3xl font-bold text-white mb-8">
+          <h2 className="text-center text-2xl text-white mb-8">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
             {faqItems.map((item, index) => (
               <AccordionItem value={`item-${index}`} key={index} className="border-b-zinc-700">
-                <AccordionTrigger className="text-base text-left font-semibold hover:no-underline p-4">
+                <AccordionTrigger className="text-left text-sm font-semibold hover:no-underline p-4">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="p-4 pt-0 text-zinc-300">
