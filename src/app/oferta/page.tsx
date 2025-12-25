@@ -111,7 +111,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-20">
+        <section className="text-center my-12">
           <h2 className="text-3xl md:text-5xl font-bold">
             Você já se perguntou <br /> por que os homens só <br />{' '}
             <span className="text-red-500">pensam em sexo?</span>
