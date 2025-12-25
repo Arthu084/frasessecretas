@@ -175,7 +175,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="my-4">
+        <section className="my-8">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
             <p className="text-left text-zinc-300 mb-6">
               Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:
@@ -221,7 +221,7 @@ export default function OfferPage() {
                   DE R$97,00
                 </span>
                 <p className="text-xl font-black my-1">
-                  POR APENAS R$9,90
+                  POR APENAS R$17,00
                 </p>
                 <p className="text-sm font-medium text-rose-100">
                   (Pagamento único e acesso vitalício)
