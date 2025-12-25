@@ -54,14 +54,13 @@ export default function OfferPage() {
     'Técnicas de comunicação secreta',
     'Frases para usar no WhatsApp',
     'Como se tornar uma mulher magnética',
-    'Acesso a um grupo de mulheres de alto valor'
   ]
 
   return (
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-2xl font-extrabold leading-tight">
+          <h1 className="text-3xl font-extrabold leading-tight">
             Envie essas <span className="text-red-500">Frases</span><br />
             <span className="text-red-500">Discretas</span> e ele ficará<br />
             obcecado por você!
@@ -124,7 +123,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center mt-16 mb-8">
+        <section className="text-center my-8">
           <h2 className="text-3xl md:text-4xl font-bold">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
@@ -214,5 +213,3 @@ export default function OfferPage() {
     </div>
   );
 }
-
-    
