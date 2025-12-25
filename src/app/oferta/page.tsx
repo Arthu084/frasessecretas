@@ -55,7 +55,7 @@ export default function OfferPage() {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
           <h1 className="text-2xl md:text-3xl font-extrabold leading-tight">
-            Envie essas <span className="text-red-500">Frases</span><br />Discretas e ele ficará<br /><span className="text-red-500">obcecado</span> por você!
+            Envie essas <span className="text-red-500">Frases</span><br /><span className="text-red-500">Discretas</span> e ele ficará<br /><span className="text-red-500">obcecado</span> por você!
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
             Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por
@@ -131,26 +131,24 @@ export default function OfferPage() {
         </section>
 
         <section className="my-16">
-          <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-md mx-auto">
-              <div className="mb-6">
-                 <p className="text-center text-zinc-300 mb-6 text-sm">Baseado em estudos comportamentais, você terá acesso às “Frases Discretas” <span className='font-bold'>que deixam qualquer homem viciado em você!</span></p>
+            <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-md mx-auto">
+                <p className="text-zinc-300 mb-6 text-sm text-center">Baseado em estudos comportamentais, você terá acesso às “Frases Discretas” <span className='font-bold'>que deixam qualquer homem viciado em você!</span></p>
                 <p className="text-center text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
-              </div>
-              <hr className="border-t border-zinc-700 mb-6"/>
-              <ul className="space-y-4">
-                  {problems.map((problem, index) => (
-                      <li key={index} className="flex flex-col items-center">
-                          <div className='flex items-center gap-4'>
-                            <div className="bg-red-600 rounded-full p-2 flex-shrink-0">
-                                <X className="text-white h-6 w-6" />
+                <hr className="border-t border-zinc-700 mb-6"/>
+                <ul className="space-y-4">
+                    {problems.map((problem, index) => (
+                        <li key={index} className="flex flex-col items-center">
+                            <div className='flex items-center gap-4'>
+                              <div className="bg-red-600 rounded-full p-2 flex-shrink-0">
+                                  <X className="text-white h-6 w-6" />
+                              </div>
+                              <span className="font-bold text-lg text-center">{problem}</span>
                             </div>
-                            <span className="font-bold text-lg text-center">{problem}</span>
-                          </div>
-                          {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4 w-full"/>}
-                      </li>
-                  ))}
-              </ul>
-          </div>
+                            {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4 w-full"/>}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </section>
 
 
