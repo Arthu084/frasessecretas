@@ -221,7 +221,9 @@ export default function OfferPage() {
                   DE R$97,00
                 </span>
                 <p className="text-xl font-black my-1">
-                  POR APENAS R$17,00
+                  POR APENAS
+                  <br />
+                  R$17,00
                 </p>
                 <p className="text-sm font-medium text-rose-100">
                   (Pagamento único e acesso vitalício)
