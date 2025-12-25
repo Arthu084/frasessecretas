@@ -220,7 +220,7 @@ export default function OfferPage() {
                 <span className="text-lg line-through text-rose-200">
                   DE R$97,00
                 </span>
-                <p className="text-3xl font-black my-1">
+                <p className="text-xl font-black my-1">
                   POR APENAS R$9,90
                 </p>
                 <p className="text-sm font-medium text-rose-100">
@@ -256,7 +256,7 @@ export default function OfferPage() {
         </section>
 
         <section className="mb-4">
-          <h2 className="text-center text-sm text-white mb-8">
+          <h2 className="text-center text-lg text-white mb-8">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
@@ -273,7 +273,7 @@ export default function OfferPage() {
           </Accordion>
         </section>
       </div>
-      <footer className="w-full bg-zinc-900 py-8 mt-8">
+      <footer className="w-full bg-zinc-900 py-8 mt-4">
           <div className="container mx-auto px-4 text-center text-zinc-400 text-sm">
               <p>Copyright © 2025. Todos os direitos reservados</p>
               <div className="flex justify-center items-center mt-4">
