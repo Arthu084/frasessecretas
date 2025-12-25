@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/carousel';
+import { X } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 
@@ -41,6 +42,12 @@ export default function OfferPage() {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
+
+  const problems = [
+      "MEDO DE SER REJEITADA",
+      "DIFICULDADE EM ENTENDER O COMPORTAMENTO MASCULINO",
+      "DESCONHECE A COMUNICAÇÃO SEDUTORA",
+  ]
 
   return (
     <div className="min-h-screen w-full bg-black text-white font-sans">
@@ -132,6 +139,26 @@ export default function OfferPage() {
             </p>
           </div>
         </section>
+
+        <section className="my-16">
+          <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-md mx-auto">
+              <p className="text-center text-zinc-300 mb-6">Suas respostas indicam que você não consegue atrair o homem que deseja por causa desses problemas...</p>
+              <ul className="space-y-4">
+                  {problems.map((problem, index) => (
+                      <li key={index} className="flex flex-col">
+                          <div className='flex items-center gap-4'>
+                            <div className="bg-red-600 rounded-full p-2 flex-shrink-0">
+                                <X className="text-white h-6 w-6" />
+                            </div>
+                            <span className="font-bold text-lg">{problem}</span>
+                          </div>
+                          {index < problems.length -1 && <hr className="border-t border-zinc-700 mt-4"/>}
+                      </li>
+                  ))}
+              </ul>
+          </div>
+        </section>
+
 
         <section className="my-16">
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
