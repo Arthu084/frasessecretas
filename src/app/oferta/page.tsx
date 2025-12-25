@@ -263,7 +263,7 @@ export default function OfferPage() {
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
             {faqItems.map((item, index) => (
               <AccordionItem value={`item-${index}`} key={index} className="border-b-zinc-700">
-                <AccordionTrigger className="text-lg text-left font-semibold hover:no-underline p-4">
+                <AccordionTrigger className="text-base text-left font-semibold hover:no-underline p-4">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="p-4 pt-0 text-zinc-300">
