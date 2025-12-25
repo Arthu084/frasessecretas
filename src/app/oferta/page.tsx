@@ -175,7 +175,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="my-8">
+        <section className="my-4">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
             <p className="text-left text-zinc-300 mb-6">
               Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:
@@ -220,7 +220,7 @@ export default function OfferPage() {
                 <span className="text-base line-through text-rose-200">
                   DE R$97,00
                 </span>
-                <p className="text-5xl md:text-6xl font-black my-1">
+                <p className="text-4xl md:text-5xl font-black my-1">
                   POR APENAS R$9,90
                 </p>
                 <p className="text-sm font-medium text-rose-100">
@@ -255,8 +255,8 @@ export default function OfferPage() {
           </Card>
         </section>
 
-        <section className="mt-12 mb-8">
-          <h2 className="text-center text-lg text-white mb-8 font-normal">
+        <section className="mt-12 mb-4">
+          <h2 className="text-center text-base text-white mb-8">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
@@ -265,7 +265,7 @@ export default function OfferPage() {
                 <AccordionTrigger className="text-left text-sm font-semibold hover:no-underline p-4">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="p-4 pt-0 text-zinc-300">
+                <AccordionContent className="p-4 pt-0 text-zinc-300 text-sm">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
