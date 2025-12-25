@@ -220,7 +220,7 @@ export default function OfferPage() {
                 <span className="text-2xl line-through text-rose-200">
                   DE R$97,00
                 </span>
-                <p className="text-3xl md:text-4xl font-extrabold my-1">
+                <p className="text-3xl md:text-3xl font-extrabold my-1">
                   POR APENAS
                   <br />
                   R$17,00
@@ -261,7 +261,7 @@ export default function OfferPage() {
         </section>
 
         <section>
-          <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-8">
+          <h2 className="text-center text-3xl font-extrabold tracking-tight text-white mb-4">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
@@ -280,7 +280,7 @@ export default function OfferPage() {
       </div>
       <footer className="w-full bg-zinc-900 py-8 mt-4">
           <div className="container mx-auto px-4 text-center text-zinc-400 text-sm">
-              <p>Copyright © 2025. Todos os direitos reservados</p>
+              <p>Copyright © 2025. <br /> Todos os direitos reservados</p>
               <div className="flex justify-center items-center mt-4">
                   <Image src="https://i.imgur.com/5FVeChe.png" alt="Selo de Garantia" width={220} height={78} />
               </div>
