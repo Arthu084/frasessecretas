@@ -11,7 +11,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/carousel';
-import { X } from 'lucide-react';
+import { CheckCircle, X } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 
@@ -48,6 +48,13 @@ export default function OfferPage() {
       {title: "Medo de ser rejeitada"},
       {title: "Dificuldade em entender o comportamento masculino"},
       {title: "Desconhece a comunicação sedutora"},
+  ]
+
+  const benefits = [
+    'Técnicas de comunicação secreta',
+    'Frases para usar no WhatsApp',
+    'Como se tornar uma mulher magnética',
+    'Acesso a um grupo de mulheres de alto valor'
   ]
 
   return (
@@ -122,7 +129,7 @@ export default function OfferPage() {
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
           </h2>
-          <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
+          <div className="mt-4 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
             <p>
               O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
               <span className="font-bold text-red-400">dopamina</span>. Na
@@ -132,7 +139,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section>
+        <section className='my-8'>
             <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
                 <p className="text-left text-zinc-300 mb-6">Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:</p>
                 <hr className="border-t border-zinc-700 mb-6"/>
@@ -159,10 +166,10 @@ export default function OfferPage() {
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
             <CardContent className="p-6 md:p-8 text-center text-white">
               <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-                O SEGREDO DAS FRASES DISCRETAS
+                O SEGREDO DAS<br />FRASES DISCRETAS
               </h2>
               <p className="mt-3 text-base md:text-lg font-medium">
-                Acesso Imediato a Todas as Frases Secretas
+                Acesso Imediato a<br />Todas as Frases Secretas
               </p>
 
               <div className="my-6">
@@ -175,6 +182,17 @@ export default function OfferPage() {
                 <p className="text-sm font-medium text-rose-100">
                   (Pagamento único e acesso vitalício)
                 </p>
+              </div>
+
+              <div className="my-8 text-left max-w-sm mx-auto">
+                <ul className="space-y-3">
+                  {benefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle className="h-6 w-6 text-green-400 mt-0.5 flex-shrink-0" />
+                      <span className="text-base font-medium">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <a href={ofertaLink} className="inline-block w-full max-w-md">
@@ -196,3 +214,5 @@ export default function OfferPage() {
     </div>
   );
 }
+
+    
