@@ -249,9 +249,8 @@ export default function OfferPage() {
                   SIM, QUERO ACESSO IMEDIATO
                 </Button>
               </a>
-              <p className="text-xs mt-4 text-rose-200">
-                Compra 100% segura. Acesso liberado imediatamente após a
-                confirmação do pagamento.
+              <p className="text-xs mt-4 text-rose-200 font-bold">
+                Compra 100% segura.
               </p>
             </CardContent>
           </Card>
