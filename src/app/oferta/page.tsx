@@ -120,10 +120,9 @@ export default function OfferPage() {
 
         <section className="text-center my-12">
           <h2 className="text-3xl md:text-5xl font-bold">
-            Você já se perguntou <br /> por que os homens só <br />{' '}
-            <span className="text-red-500">pensam em sexo?</span>
+            Você já se perguntou por que os homens só pensam em sexo?
           </h2>
-          <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200">
+          <div className="mt-8 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-left">
             <p>
               O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
               <span className="font-bold text-red-400">dopamina</span>. Na maioria das vezes, a única fonte de dopamina do relacionamento é o sexo.
@@ -132,7 +131,7 @@ export default function OfferPage() {
               O que você realmente precisa fazer é <span className="font-bold text-red-500">deixá-lo viciado em você</span>, e não apenas no que vocês fazem na cama.
             </p>
             <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-4 my-6">
-                <p className="text-base">
+                <p className="text-base text-left">
                     Baseado em estudos comportamentais, você terá acesso acesso às <span className="font-bold text-red-400">“Frases Discretas”</span> que deixam qualquer homem viciado em você!
                 </p>
             </div>
