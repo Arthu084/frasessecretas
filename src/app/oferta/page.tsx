@@ -54,7 +54,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-2xl md:text-3xl font-extrabold leading-tight">
+          <h1 className="text-2xl font-extrabold leading-tight">
             Envie essas <span className="text-red-500">Frases</span><br />
             <span className="text-red-500">Discretas</span> e ele ficará<br />
             obcecado por você!
@@ -67,7 +67,7 @@ export default function OfferPage() {
 
         <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-8">
           <div className="text-center mb-4">
-            <h3 className="text-2xl md:text-3xl font-bold">
+            <h3 className="text-3xl font-bold">
               Confira o que dizem as mulheres que usaram as{' '}
               <span className="text-red-500">Frases Discretas</span>
             </h3>
@@ -117,7 +117,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-16">
+        <section className="text-center mt-16 mb-8">
           <h2 className="text-3xl md:text-4xl font-bold">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
@@ -132,7 +132,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="my-8">
+        <section>
             <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
                 <p className="text-left text-zinc-300 mb-6">Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:</p>
                 <hr className="border-t border-zinc-700 mb-6"/>
