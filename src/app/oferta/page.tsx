@@ -46,7 +46,7 @@ export default function OfferPage() {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-12">
           <p className="text-lg md:text-xl font-semibold tracking-wider uppercase">
-            Envie essas Frases Discretas
+            Envie essas <span className="text-red-500">Frases Discretas</span>
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mt-4 leading-tight">
             E ele ficará <br />{' '}
@@ -58,8 +58,8 @@ export default function OfferPage() {
           </h2>
         </header>
 
-        <section className="bg-zinc-900 py-12 px-4 rounded-xl shadow-lg my-8">
-          <div className="text-center mb-8">
+        <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-8">
+          <div className="text-center mb-4">
             <h3 className="text-2xl md:text-3xl font-bold">
               Confira o que dizem as mulheres que usaram as{' '}
               <span className="text-red-500">Frases Discretas</span>
