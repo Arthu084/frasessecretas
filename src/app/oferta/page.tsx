@@ -54,7 +54,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+          <h1 className="text-2xl md:text-3xl font-extrabold leading-tight">
             Envie essas <span className="text-red-500">Frases</span><br /><span className="text-red-500">Discretas</span> e ele ficará<br />obcecado por você!
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
@@ -132,7 +132,7 @@ export default function OfferPage() {
 
         <section className="my-16">
             <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
-                <p className="text-center text-zinc-300 mb-6">Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:</p>
+                <p className="text-left text-zinc-300 mb-6">Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:</p>
                 <hr className="border-t border-zinc-700 mb-6"/>
                 <ul className="space-y-4">
                     {problems.map((problem, index) => (
