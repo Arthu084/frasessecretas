@@ -203,7 +203,7 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="my-12">
+        <section className="my-8">
           <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
             <CardContent className="p-6 md:p-8 text-center text-white">
               <CardTitle className="text-2xl md:text-3xl font-extrabold tracking-tight">
@@ -255,8 +255,8 @@ export default function OfferPage() {
           </Card>
         </section>
 
-        <section className="my-12">
-          <h2 className="text-center text-xl text-white mb-8">
+        <section className="mt-12 mb-8">
+          <h2 className="text-center text-lg text-white mb-8 font-normal">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
