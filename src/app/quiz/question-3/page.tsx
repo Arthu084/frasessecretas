@@ -1,9 +1,10 @@
+
 'use client';
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useRouter } from 'next/navigation';
 
@@ -38,25 +39,25 @@ export default function QuizDesirePage() {
             />
         )}
 
-        <h1 className="text-xl font-bold leading-tight mt-8">Se você pudesse usar técnicas comprovadas para despertar o desejo de um homem, como isso mudaria sua vida amorosa?</h1>
+        <h1 className="text-xl font-bold leading-tight mt-8">Se você pudesse usar <span className="text-red-500">técnicas comprovadas</span> para <span className="text-red-500">despertar o desejo de um homem</span>, como isso mudaria sua vida amorosa?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-zinc-800 to-zinc-900 hover:from-red-700 hover:to-rose-800 border border-zinc-700 hover:border-red-500 shadow-lg hover:shadow-red-500/20 transition-all transform hover:scale-105"
           >
             Mudaria completamente. Me sentiria poderosa e desejada
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-zinc-800 to-zinc-900 hover:from-red-700 hover:to-rose-800 border border-zinc-700 hover:border-red-500 shadow-lg hover:shadow-red-500/20 transition-all transform hover:scale-105"
           >
             Melhoraria muito. Finalmente teria a atenção que mereço
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-zinc-800 to-zinc-900 hover:from-red-700 hover:to-rose-800 border border-zinc-700 hover:border-red-500 shadow-lg hover:shadow-red-500/20 transition-all transform hover:scale-105"
           >
             Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
           </Button>
@@ -69,11 +70,7 @@ export default function QuizDesirePage() {
             <ArrowLeft />
           </Button>
         </Link>
-        <Link href="/oferta">
-            <Button variant="outline" size="icon">
-                <ArrowRight />
-            </Button>
-        </Link>
+        <div/>
       </div>
     </div>
   );
