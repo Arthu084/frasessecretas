@@ -41,7 +41,7 @@ export default function QuizPage() {
         </p>
 
         <Link href="/quiz">
-          <Button className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105 animate-pulse-slow">
+          <Button className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105">
             SIM, VAMOS COMEÇAR!
           </Button>
         </Link>
