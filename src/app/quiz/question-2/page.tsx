@@ -38,25 +38,25 @@ export default function QuizConfidencePage() {
             />
         )}
 
-        <h1 className="text-xl font-bold leading-tight mt-8">Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
+        <h1 className="text-xl font-bold leading-tight mt-8">Você gostaria de se sentir mais <span className="text-red-500">segura e confiante</span> ao interagir com qualquer homem?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 shadow-lg hover:shadow-zinc-600/30 transition-all transform hover:scale-105"
           >
             Sim, definitivamente. Isso me daria uma nova personalidade
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 shadow-lg hover:shadow-zinc-600/30 transition-all transform hover:scale-105"
           >
             Sim, muito. Me ajudaria a superar minha timidez e inseguranças
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 shadow-lg hover:shadow-zinc-600/30 transition-all transform hover:scale-105"
           >
             Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
           </Button>
