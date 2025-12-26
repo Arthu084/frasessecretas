@@ -44,31 +44,19 @@ export default function QuizConfidencePage() {
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-              border: '1px solid #ef4444',
-            }}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
           >
             Sim, definitivamente. Isso me daria uma nova personalidade
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-              background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-              border: '1px solid #ef4444',
-            }}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
           >
             Sim, muito. Me ajudaria a superar minha timidez e inseguranças
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-              }}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
           >
             Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
           </Button>

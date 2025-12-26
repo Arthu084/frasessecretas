@@ -34,14 +34,14 @@ export default function ResultsPage() {
         
         <Link href={finalLink}>
             <Button 
-                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105 animate-pulse-slow"
+                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
                 SIM, QUERO CONTINUAR!
             </Button>
         </Link>
       </div>
       <div className="flex justify-start w-full max-w-md mx-auto mt-8">
-        <Link href="/quiz/question-4">
+        <Link href="/quiz/question-3">
           <Button variant="outline" size="icon">
             <ArrowLeft />
           </Button>

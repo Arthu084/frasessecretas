@@ -12,7 +12,7 @@ export default function QuizDesirePage() {
   const desireImage = PlaceHolderImages.find((img) => img.id === 'desire');
   
   const handleNext = () => {
-    router.push('/quiz/question-4');
+    router.push('/oferta');
   };
 
   return (
@@ -44,31 +44,19 @@ export default function QuizDesirePage() {
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-            }}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
           >
             Mudaria completamente. Me sentiria poderosa e desejada
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-            }}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
           >
             Melhoraria muito. Finalmente teria a atenção que mereço
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left"
-            style={{
-                background: 'linear-gradient(to right, #dc2626, #b91c1c)',
-                border: '1px solid #ef4444',
-            }}
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
           >
             Faria uma grande diferença. Me sentiria mais confiante nos meus relacionamentos
           </Button>
@@ -81,7 +69,7 @@ export default function QuizDesirePage() {
             <ArrowLeft />
           </Button>
         </Link>
-        <Link href="/quiz/question-4">
+        <Link href="/oferta">
             <Button variant="outline" size="icon">
                 <ArrowRight />
             </Button>
