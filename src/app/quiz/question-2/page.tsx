@@ -44,19 +44,19 @@ export default function QuizConfidencePage() {
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
           >
             Sim, definitivamente. Isso me daria uma nova personalidade
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
           >
             Sim, muito. Me ajudaria a superar minha timidez e inseguranças
           </Button>
           <Button
             onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-red-600 hover:bg-red-700 shadow-md transition-all"
+            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
           >
             Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
           </Button>
