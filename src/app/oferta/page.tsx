@@ -112,7 +112,7 @@ export default function OfferPage() {
           <div className="text-center mb-4">
             <h3 className="text-2xl">
               Confira o que dizem as mulheres que usaram as{' '}
-              <span className="font-bold text-red-500">Frases Discretas</span>
+              <span className="text-red-500">Frases Discretas</span>
             </h3>
             <p className="text-lg md:text-xl text-zinc-300 mt-2">
               Elas conseguiram o homem que tanto desejavam...
@@ -161,7 +161,7 @@ export default function OfferPage() {
         </section>
 
         <section className="text-center my-4">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-4xl">
             Você já se perguntou por que os homens só{' '}
             <span className="text-red-500">pensam em sexo</span>?
           </h2>
@@ -217,7 +217,7 @@ export default function OfferPage() {
               </p>
 
               <div className="my-6">
-                <span className="text-2xl line-through text-rose-200">
+                <span className="text-3xl line-through text-rose-200">
                   DE R$97,00
                 </span>
                 <p className="text-3xl md:text-3xl font-extrabold my-1">
@@ -260,7 +260,7 @@ export default function OfferPage() {
           </Card>
         </section>
 
-        <section className="mb-[-20px]">
+        <section>
           <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-4">
             Dúvidas Frequentes
           </h2>
