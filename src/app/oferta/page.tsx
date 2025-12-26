@@ -110,9 +110,9 @@ export default function OfferPage() {
 
         <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-8">
           <div className="text-center mb-4">
-            <h3 className="text-3xl font-bold">
+            <h3 className="text-2xl">
               Confira o que dizem as mulheres que usaram as{' '}
-              <span className="text-red-500">Frases Discretas</span>
+              <span className="font-bold text-red-500">Frases Discretas</span>
             </h3>
             <p className="text-lg md:text-xl text-zinc-300 mt-2">
               Elas conseguiram o homem que tanto desejavam...
@@ -260,8 +260,8 @@ export default function OfferPage() {
           </Card>
         </section>
 
-        <section>
-          <h2 className="text-center text-3xl font-extrabold tracking-tight text-white mb-4">
+        <section className="mb-[-20px]">
+          <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-4">
             Dúvidas Frequentes
           </h2>
           <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto bg-zinc-900 rounded-lg p-2">
