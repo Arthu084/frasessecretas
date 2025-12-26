@@ -217,10 +217,10 @@ export default function OfferPage() {
               </p>
 
               <div className="my-6">
-                <span className="text-3xl line-through text-rose-200">
+                <span className="text-2xl line-through text-rose-200">
                   DE R$97,00
                 </span>
-                <p className="text-3xl md:text-3xl font-extrabold my-1">
+                <p className="text-3xl md:text-4xl font-extrabold my-1">
                   POR APENAS
                   <br />
                   R$17,00
