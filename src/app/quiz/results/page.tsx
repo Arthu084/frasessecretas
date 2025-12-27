@@ -8,7 +8,15 @@ export default function ResultsPage() {
   const finalLink = "/oferta";
 
   return (
-    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans p-4">
+    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
+       <div className="w-full max-w-md mx-auto mt-4">
+        <div className="relative h-2 w-full bg-zinc-700 rounded-full">
+          <div
+            className="absolute top-0 left-0 h-full bg-red-600 rounded-full"
+            style={{ width: '100%' }}
+          ></div>
+        </div>
+      </div>
       <div className="flex flex-col items-center justify-center text-center flex-grow">
         
         <Image

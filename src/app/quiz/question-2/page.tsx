@@ -20,7 +20,7 @@ export default function QuizConfidencePage() {
         <div className="relative h-2 w-full bg-zinc-700 rounded-full">
           <div
             className="absolute top-0 left-0 h-full bg-red-600 rounded-full"
-            style={{ width: '66%' }}
+            style={{ width: '33%' }}
           ></div>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function QuizDesirePage() {
         <div className="relative h-2 w-full bg-zinc-700 rounded-full">
           <div
             className="absolute top-0 left-0 h-full bg-red-600 rounded-full"
-            style={{ width: '100%' }}
+            style={{ width: '66%' }}
           ></div>
         </div>
       </div>
@@ -64,5 +64,6 @@ export default function QuizDesirePage() {
     </div>
   );
 }
+
 
 
