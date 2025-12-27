@@ -11,7 +11,7 @@ export default function QuizDesirePage() {
   const desireImage = PlaceHolderImages.find((img) => img.id === 'desire');
   
   const handleNext = () => {
-    router.push('/oferta');
+    router.push('/quiz/results');
   };
 
   return (
@@ -61,11 +61,7 @@ export default function QuizDesirePage() {
           </Button>
         </div>
       </div>
-
-      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
-        <div/>
-        <div/>
-      </div>
     </div>
   );
 }
+
