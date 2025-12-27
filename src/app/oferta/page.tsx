@@ -35,7 +35,7 @@ export default function OfferPage() {
   ];
 
   const ofertaLink =
-    'https://pay.kirvano.com/e8a75e38-406a-4d2b-9e48-e8a4a589a80e';
+    'https://checkout.dinamicasdafe.site/VCCL1O8SCNIV';
 
   React.useEffect(() => {
     if (!api) {
@@ -163,7 +163,7 @@ export default function OfferPage() {
         <section className="text-center my-4">
           <h2 className="text-3xl md:text-4xl">
             Você já se perguntou por que os homens só{' '}
-            <span className="text-red-500">pensam em sexo</span>?
+            <span>pensam em sexo</span>?
           </h2>
           <div className="mt-4 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
             <p>
@@ -217,7 +217,7 @@ export default function OfferPage() {
               </p>
 
               <div className="my-6">
-                <span className="text-2xl line-through text-rose-200">
+                <span className="text-xl line-through text-rose-200">
                   DE R$97,00
                 </span>
                 <p className="text-3xl md:text-4xl font-extrabold my-1">
@@ -289,3 +289,5 @@ export default function OfferPage() {
     </div>
   );
 }
+
+    
