@@ -2,8 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useRouter } from 'next/navigation';
 
@@ -42,38 +41,31 @@ export default function QuizConfidencePage() {
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
-          <Button
-            onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
-          >
-            Sim, definitivamente. Isso me daria uma nova personalidade
-          </Button>
-          <Button
-            onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
-          >
-            Sim, muito. Me ajudaria a superar minha timidez e inseguranças
-          </Button>
-          <Button
-            onClick={handleNext}
-            className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
-          >
-            Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
-          </Button>
-        </div>
+        <Button
+          onClick={handleNext}
+          className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+        >
+          Sim, definitivamente. Isso me daria uma nova personalidade
+        </Button>
+        <Button
+          onClick={handleNext}
+          className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+        >
+          Sim, muito. Me ajudaria a superar minha timidez e inseguranças
+        </Button>
+        <Button
+          onClick={handleNext}
+          className="w-full text-base py-6 px-6 rounded-lg text-white whitespace-normal h-auto justify-start text-left bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-700 hover:to-rose-800 border border-red-500 shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all transform hover:scale-105"
+        >
+          Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos
+        </Button>
+      </div>
       </div>
 
-      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
-        <Link href="/quiz">
-          <Button variant="outline" size="icon">
-            <ArrowLeft />
-          </Button>
-        </Link>
-        <Link href="/quiz/question-3">
-            <Button variant="outline" size="icon">
-                <ArrowRight />
-            </Button>
-        </Link>
+      <div className="flex justify-end w-full max-w-md mx-auto mt-8">
+        <Button variant="outline" size="icon" onClick={handleNext}>
+          <ArrowRight />
+        </Button>
       </div>
     </div>
   );

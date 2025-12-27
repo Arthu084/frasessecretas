@@ -2,7 +2,6 @@
 
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 
 export default function ResultsPage() {
@@ -41,11 +40,6 @@ export default function ResultsPage() {
         </Link>
       </div>
       <div className="flex justify-start w-full max-w-md mx-auto mt-8">
-        <Link href="/quiz/question-3">
-          <Button variant="outline" size="icon">
-            <ArrowLeft />
-          </Button>
-        </Link>
       </div>
     </div>
   );

@@ -2,8 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 export default function QuizGenderPage() {
@@ -68,17 +67,10 @@ export default function QuizGenderPage() {
         </div>
       </div>
 
-      <div className="flex justify-between w-full max-w-md mx-auto mt-8">
-        <Link href="/">
-          <Button variant="outline" size="icon">
-            <ArrowLeft />
-          </Button>
-        </Link>
-        <Link href="/quiz/question-2">
-            <Button variant="outline" size="icon">
-                <ArrowRight />
-            </Button>
-        </Link>
+      <div className="flex justify-end w-full max-w-md mx-auto mt-8">
+        <Button variant="outline" size="icon" onClick={handleNext}>
+          <ArrowRight />
+        </Button>
       </div>
     </div>
   );

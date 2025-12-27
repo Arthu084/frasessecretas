@@ -3,8 +3,6 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useRouter } from 'next/navigation';
 
@@ -39,7 +37,7 @@ export default function QuizDesirePage() {
             />
         )}
 
-        <h1 className="text-xl font-bold leading-tight mt-8">Se você pudesse usar <span className="text-red-500">técnicas comprovadas</span> para despertar o desejo de um homem, como isso mudaria sua vida amorosa?</h1>
+        <h1 className="text-xl font-bold leading-tight mt-8">Se você pudesse usar <span className="text-red-500">técnicas comprovadas</span> para <span className="text-white">despertar o desejo de um homem</span>, como isso mudaria sua vida amorosa?</h1>
         <p className="text-zinc-400 mt-4">Selecione a sua resposta</p>
 
         <div className="flex flex-col gap-4 mt-8 w-full max-w-sm">
@@ -65,11 +63,7 @@ export default function QuizDesirePage() {
       </div>
 
       <div className="flex justify-between w-full max-w-md mx-auto mt-8">
-        <Link href="/quiz/question-2">
-          <Button variant="outline" size="icon">
-            <ArrowLeft />
-          </Button>
-        </Link>
+        <div/>
         <div/>
       </div>
     </div>
