@@ -34,8 +34,8 @@ export default function OfferPage() {
     'https://i.imgur.com/mtW4h1x.png',
   ];
 
-  const ofertaLink =
-    'https://checkout.dinamicasdafe.site/VCCL1O8SCNIV';
+  const ofertaLinkCompleto = 'https://checkout.dinamicasdafe.site/VCCL1O8SCNIV';
+  const ofertaLinkBasico = 'https://checkout.dinamicasdafe.site/VCCL1O8SCNIV'; // Placeholder - you might want to change this
 
   React.useEffect(() => {
     if (!api) {
@@ -56,11 +56,16 @@ export default function OfferPage() {
     { title: 'Desconhece a comunicação sedutora' },
   ];
 
-  const benefits = [
+  const benefitsBasico = [
+    'Frases poderosas para usar no WhatsApp',
     'Técnicas de comunicação secreta',
-    'Frases para usar no WhatsApp',
+  ];
+
+  const benefitsCompleto = [
+    'Tudo do acesso básico',
     'Como se tornar uma mulher magnética',
-    'Bônus: Guia de Confiança Inabalável',
+    'Guia de Confiança Inabalável',
+    'Frases Secretas para Situações Críticas',
   ];
 
   const faqItems = [
@@ -77,7 +82,7 @@ export default function OfferPage() {
     {
       question: 'O que acontece depois que eu fizer a minha inscrição?',
       answer:
-        'Após a confirmação do pagamento, você receberá um e-mail com os dados de acesso à nossa área de membros exclusiva, onde todo o material estará disponível para você acessar quando e onde quiser.',
+        'Após a confirmação do pagamento, você receberá um e-mail com os dados de acesso à nossa área de membros exclusiva, where todo o material estará disponível para você acessar quando e onde quiser.',
     },
     {
       question: 'Quais as formas de pagamento?',
@@ -202,62 +207,101 @@ export default function OfferPage() {
             </ul>
           </div>
         </section>
+        
+        <section className="my-12">
+          <h2 className="text-center text-3xl font-bold mb-8">Escolha o plano ideal para você</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
+            {/* Card Básico */}
+            <Card className="bg-zinc-900 border-zinc-700 flex flex-col h-full">
+              <CardContent className="p-6 md:p-8 text-center flex flex-col flex-grow">
+                <CardTitle className="text-2xl font-bold tracking-tight">
+                  ACESSO BÁSICO
+                </CardTitle>
+                
+                <div className="my-6 flex-grow">
+                  <p className="text-3xl font-bold my-1">
+                    R$17,00
+                  </p>
+                  <p className="text-sm font-medium text-zinc-400">
+                    (Pagamento único)
+                  </p>
+                </div>
 
-        <section className="my-8">
-          <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30">
-            <CardContent className="p-6 md:p-8 text-center text-white">
-              <CardTitle className="text-2xl md:text-3xl font-extrabold tracking-tight">
-                O SEGREDO DAS
-                <br />
-                FRASES DISCRETAS
-              </CardTitle>
-              <p className="mt-3 text-base md:text-lg font-medium">
-                Acesso Imediato a<br />
-                Todas as Frases Secretas
-              </p>
+                <div className="my-8 text-left max-w-sm mx-auto">
+                  <ul className="space-y-3">
+                    {benefitsBasico.map((benefit, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-base">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-              <div className="my-6">
-                <span className="text-xl line-through text-rose-200">
-                  DE R$97,00
-                </span>
-                <p className="text-3xl md:text-4xl font-extrabold my-1">
-                  POR APENAS
-                  <br />
-                  R$17,00
-                </p>
-                <p className="text-sm font-medium text-rose-100">
-                  (Pagamento único e acesso vitalício)
-                </p>
+                <a href={ofertaLinkBasico} className="inline-block w-full max-w-md mt-auto">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full h-auto text-base font-bold py-3 rounded-lg"
+                  >
+                    QUERO O ACESSO BÁSICO
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* Card Completo */}
+            <div className="relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <div className="bg-red-500 text-white text-sm font-bold px-4 py-1 rounded-full uppercase">
+                  Mais Vendido
+                </div>
               </div>
+              <Card className="bg-gradient-to-br from-red-800 via-red-600 to-rose-700 border-rose-500 border-2 shadow-2xl shadow-red-500/30 flex flex-col h-full">
+                <CardContent className="p-6 md:p-8 text-center text-white flex flex-col flex-grow">
+                  <CardTitle className="text-2xl font-extrabold tracking-tight">
+                    ACESSO COMPLETO
+                  </CardTitle>
+                  
+                  <div className="my-6 flex-grow">
+                    <p className="text-3xl md:text-4xl font-extrabold my-1">
+                      R$27,00
+                    </p>
+                    <p className="text-sm font-medium text-rose-100">
+                      (Pagamento único e acesso vitalício)
+                    </p>
+                  </div>
 
-              <div className="my-8 text-left max-w-sm mx-auto">
-                <ul className="space-y-3">
-                  {benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      {benefit.startsWith('Bônus:') ? (
-                        <Gift className="h-6 w-6 text-yellow-400 mt-0.5 flex-shrink-0" />
-                      ) : (
-                        <CheckCircle className="h-6 w-6 text-green-400 mt-0.5 flex-shrink-0" />
-                      )}
-                      <span className="text-base font-medium">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                  <div className="my-8 text-left max-w-sm mx-auto">
+                    <ul className="space-y-3">
+                      {benefitsCompleto.map((benefit, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                           {benefit.includes('básico') ? (
+                            <CheckCircle className="h-6 w-6 text-green-400 mt-0.5 flex-shrink-0" />
+                           ) : (
+                            <Gift className="h-6 w-6 text-yellow-400 mt-0.5 flex-shrink-0" />
+                           )}
+                          <span className="text-base font-medium">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-              <a href={ofertaLink} className="inline-block w-full max-w-md">
-                <Button
-                  size="lg"
-                  className="w-full h-auto text-base font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-pulse-slow"
-                >
-                  SIM, QUERO ACESSO IMEDIATO
-                </Button>
-              </a>
-              <p className="text-xs mt-4 text-rose-200 font-bold">
-                Compra 100% segura.
-              </p>
-            </CardContent>
-          </Card>
+                  <a href={ofertaLinkCompleto} className="inline-block w-full max-w-md mt-auto">
+                    <Button
+                      size="lg"
+                      className="w-full h-auto text-base font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-pulse-slow"
+                    >
+                      SIM, QUERO O ACESSO COMPLETO
+                    </Button>
+                  </a>
+                  <p className="text-xs mt-4 text-rose-200 font-bold">
+                    Compra 100% segura.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </section>
 
         <section>
@@ -289,5 +333,3 @@ export default function OfferPage() {
     </div>
   );
 }
-
-    
