@@ -23,7 +23,7 @@ export default function QuizPage() {
       )}
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 mt-20">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 mt-28">
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           Descubra como deixar
           <br />
