@@ -27,11 +27,11 @@ export default function QuizPage() {
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           Descubra como deixar
           <br />
-          ele <span className="text-red-500">obcecado</span> por você
+          ele <span className="text-cyan-400">obcecado</span> por você
           <br />
           apenas usando essas
           <br />
-          “<span className="text-blue-500">FRASES DISCRETAS</span>”
+          “<span className="text-red-500">FRASES SECRETAS</span>”
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
