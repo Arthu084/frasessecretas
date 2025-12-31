@@ -18,7 +18,7 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start text-center pt-24">
+      <div className="flex flex-col items-center justify-start text-center pt-16">
         
         <div className="mt-8">
           <Image
@@ -34,7 +34,7 @@ export default function ResultsPage() {
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-3xl md:text-4xl leading-tight mt-2">
+        <h2 className="text-4xl leading-tight mt-2">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
@@ -51,7 +51,7 @@ export default function ResultsPage() {
         
         <Link href={finalLink}>
             <Button 
-                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-lg py-6 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
+                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-lg py-6 px-10 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
                 QUERO CONTINUAR
             </Button>
