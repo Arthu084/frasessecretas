@@ -100,7 +100,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold leading-tight">
+          <h1 className="text-4xl font-bold leading-tight">
             Envie essas <span className="text-red-500">Frases</span>
             <br />
             <span className="text-red-500">Discretas</span> e ele ficará
@@ -292,7 +292,7 @@ export default function OfferPage() {
                       size="lg"
                       className="w-full h-auto text-base font-bold py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transition-transform transform hover:scale-105 animate-pulse-slow"
                     >
-                      SIM, QUERO O ACESSO COMPLETO
+                      SIM, QUERO O ACESSO COMPLEto
                     </Button>
                   </a>
                   <p className="text-xs mt-4 text-rose-200 font-bold">
