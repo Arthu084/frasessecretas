@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -26,7 +27,7 @@ export default function QuizPage() {
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           Descubra como deixar
           <br />
-          ele obcecado por você
+          ele <span className="text-red-500">obcecado</span> por você
           <br />
           apenas usando essas
           <br />
