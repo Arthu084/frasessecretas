@@ -20,7 +20,7 @@ export default function ResultsPage() {
       </div>
       <div className="flex flex-col items-center justify-center text-center">
         
-        <div className="mt-8">
+        <div className="mt-12">
           <Image
               src="https://i.imgur.com/EhUv9ej.png"
               alt="Troféu"
@@ -30,28 +30,28 @@ export default function ResultsPage() {
           />
         </div>
 
-        <h1 className="text-xl md:text-2xl font-bold leading-tight">
+        <h1 className="text-xl md:text-xl font-bold leading-tight">
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-3xl md:text-4xl leading-tight mt-2">
+        <h2 className="text-2xl md:text-3xl leading-tight mt-2">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
-        <p className="mt-8 text-2xl max-w-lg">
+        <p className="mt-8 text-lg max-w-lg">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
         </p>
 
-        <h3 className="text-2xl font-normal mt-10">
+        <h3 className="text-lg font-normal mt-10">
           O próximo passo revela o método <br/>
           completo que quase ninguém conhece.
         </h3>
         
         <Link href={finalLink}>
             <Button 
-                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-2xl py-7 px-28 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
+                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-2xl py-7 px-24 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
                 QUERO CONTINUAR
             </Button>
