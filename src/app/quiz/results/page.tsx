@@ -35,7 +35,7 @@ export default function ResultsPage() {
             Você foi Selecionada para<br/>desbloquear o <span className="text-red-500">Segredo da Sedução</span>
         </h2>
 
-        <p className="mt-8 text-lg md:text-xl max-w-md">
+        <p className="mt-8 text-base md:text-lg max-w-md">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
