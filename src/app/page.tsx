@@ -24,13 +24,14 @@ export default function QuizPage() {
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center p-4">
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
-          Descubra como deixar <br /> ele <span className="text-red-500">obcecado</span> por você
+          Descubra como deixar
+          <br />
+          ele <span className="text-red-500">obcecado</span> por você!
+          <br />
+          apenas usando essas
+          <br />
+          <span className="text-cyan-400">“FRASES DISCRETAS”</span>
         </h1>
-
-        <h2 className="text-2xl md:text-3xl font-bold mt-6">
-          Apenas usando essa <br />
-          <span className="text-cyan-400">“FRASE DISCRETA”</span>
-        </h2>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
           Responda este pequeno questionário para saber se está pronta para ter acesso a esse segredo...
