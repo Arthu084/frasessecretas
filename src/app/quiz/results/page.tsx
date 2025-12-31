@@ -36,20 +36,20 @@ export default function ResultsPage() {
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
-        <p className="mt-8 text-lg max-w-md">
+        <p className="mt-8 text-xl max-w-md">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
         </p>
 
-        <h3 className="text-lg font-normal mt-10">
+        <h3 className="text-xl font-normal mt-10">
           O próximo passo revela o método <br/>
           completo que quase ninguém conhece.
         </h3>
         
         <Link href={finalLink}>
             <Button 
-                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-16 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
+                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-2xl py-7 px-20 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
                 QUERO CONTINUAR
             </Button>
@@ -58,4 +58,3 @@ export default function ResultsPage() {
     </div>
   );
 }
-
