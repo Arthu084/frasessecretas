@@ -25,7 +25,7 @@ export default function ResultsPage() {
             alt="Troféu"
             width={80}
             height={80}
-            className="mb-8"
+            className="mt-8 mb-8"
         />
 
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
