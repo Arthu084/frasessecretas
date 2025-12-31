@@ -28,10 +28,12 @@ export default function ResultsPage() {
         />
 
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
-          ACESSO CONFIRMADO <br />
-          Você foi Selecionada para desbloquear <br />
-          o Segredo da Sedução
+          ACESSO CONFIRMADO
         </h1>
+        
+        <h2 className="text-xl md:text-2xl font-bold leading-tight mt-2">
+            Você foi Selecionada para<br/>desbloquear o <span className="text-red-500">Segredo da Sedução</span>
+        </h2>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
           Você vai descobrir o que dizer, <br />
@@ -39,10 +41,10 @@ export default function ResultsPage() {
           gerar interesse sem se expor demais.
         </p>
 
-        <h2 className="text-base md:text-lg font-normal mt-10">
+        <h3 className="text-base md:text-lg font-normal mt-10">
           O próximo passo revela o método <br/>
           completo que quase ninguém conhece.
-        </h2>
+        </h3>
         
         <Link href={finalLink}>
             <Button 
