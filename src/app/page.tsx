@@ -26,7 +26,7 @@ export default function QuizPage() {
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           Descubra como deixar
           <br />
-          ele <span className="text-red-500">obcecado</span> por você!
+          ele <span className="text-red-500">obcecado</span> por você
           <br />
           apenas usando essas
           <br />
@@ -34,7 +34,11 @@ export default function QuizPage() {
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
-          Responda este pequeno questionário para saber se está pronta para ter acesso a esse segredo...
+          Responda 3 perguntas rápidas para saber
+          <br />
+          se você está pronta para ter acesso a esse
+          <br />
+          segredo das mulheres.
         </p>
 
         <p className="mt-4 text-base font-semibold">
