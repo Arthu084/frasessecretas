@@ -34,7 +34,7 @@ export default function OfferPage() {
     'https://i.imgur.com/mtW4h1x.png',
   ];
 
-  const ofertaLinkCompleto = 'https://checkout.dinamicasdafe.site/VCCL1O8SCNIV';
+  const ofertaLinkCompleto = 'https://checkout.dinamicasdafe.site/VCCL1O8SCNXU';
   const ofertaLinkBasico = 'https://checkout.dinamicasdafe.site/VCCL1O8SCNIV'; // Placeholder - you might want to change this
 
   React.useEffect(() => {
@@ -209,7 +209,7 @@ export default function OfferPage() {
         </section>
         
         <section className="my-12">
-          <h2 className="text-center text-3xl font-bold mb-8">Escolha o plano ideal para você</h2>
+          <h2 className="text-center text-3xl font-bold mb-8">Escolha o plano<br/>ideal para você</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
             {/* Card Básico */}
             <Card className="bg-zinc-900 border-zinc-700 flex flex-col h-full">
