@@ -72,12 +72,12 @@ export default function OfferPage() {
     {
       question: 'Isso vai funcionar pra mim?',
       answer:
-        'Sim! As Frases Discretas foram desenvolvidas com base em estudos de comportamento e funcionam para qualquer mulher, independentemente da idade ou tipo de relacionamento que você busca.',
+        'Sim! As Frases Secretas foram desenvolvidas com base em estudos de comportamento e funcionam para qualquer mulher, independentemente da idade ou tipo de relacionamento que você busca.',
     },
     {
       question: 'O que vou receber?',
       answer:
-        'Você receberá acesso imediato e vitalício a um guia completo com todas as Frases Discretas, exemplos práticos de como e quando usá-las, além de bônus exclusivos para acelerar seus resultados.',
+        'Você receberá acesso imediato e vitalício a um guia completo com todas as Frases Secretas, exemplos práticos de como e quando usá-las, além de bônus exclusivos para acelerar seus resultados.',
     },
     {
       question: 'O que acontece depois que eu fizer a minha inscrição?',
@@ -101,11 +101,9 @@ export default function OfferPage() {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
           <h1 className="text-2xl md:text-3xl font-bold leading-tight">
-            Envie essas <span className="text-red-500">Frases Discretas</span>
+            Envie essas Frases Secretas
             <br />
-            e ele ficará
-            <br />
-            obcecado por você!
+            e ele ficará <strong style={{ color: '#22d3ee' }}>obcecado</strong> por você!
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
             Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por
@@ -117,7 +115,7 @@ export default function OfferPage() {
           <div className="text-center mb-4">
             <h3 className="text-2xl">
               Confira o que dizem as mulheres que usaram as{' '}
-              <span className="text-red-500">Frases Discretas</span>
+              <span className="text-red-500">Frases Secretas</span>
             </h3>
             <p className="text-lg md:text-xl text-zinc-300 mt-2">
               Elas conseguiram o homem que tanto desejavam...
