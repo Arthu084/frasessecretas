@@ -115,10 +115,10 @@ export default function OfferPage() {
           <div className="text-center mb-4">
             <h3 className="text-2xl">
               Confira o que dizem as mulheres que usaram as{' '}
-              <span className="text-red-500">Frases Secretas</span>
+              <strong className="text-red-500">Frases Secretas</strong>
             </h3>
             <p className="text-lg md:text-xl text-zinc-300 mt-2">
-              Elas conseguiram o homem que tanto desejavam...
+              Elas conseguiram o homem<br/>que tanto desejavam...
             </p>
           </div>
 
@@ -171,7 +171,7 @@ export default function OfferPage() {
           <div className="mt-4 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
             <p>
               O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
-              <span className="font-bold text-red-400">dopamina</span>. Na
+              <span className="font-bold" style={{ color: '#22d3ee' }}>dopamina</span>. Na
               maioria das vezes, a única fonte de dopamina do relacionamento é o
               sexo.
             </p>
