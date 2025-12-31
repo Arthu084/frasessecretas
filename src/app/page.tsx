@@ -34,15 +34,15 @@ export default function QuizPage() {
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
-          Responda 3 perguntas rápidas para saber
+          Responda 3 perguntas rápidas para
           <br />
-          se você está pronta para ter acesso a esse
+          saber se você está pronta para ter
           <br />
-          segredo das mulheres.
+          acesso a esse segredo das mulheres.
         </p>
 
         <p className="mt-4 text-base font-semibold">
-          Levará menos de 1 minuto
+          Levará menos de 30 segundos
         </p>
 
         <Link href="/quiz">
