@@ -100,7 +100,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-2xl font-bold leading-tight">
+          <h1 className="text-2xl leading-tight">
             Envie essas Frases Secretas<br />e ele ficará <strong style={{ color: '#22d3ee' }}>obcecado</strong> por você!
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
