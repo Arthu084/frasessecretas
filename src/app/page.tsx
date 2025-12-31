@@ -31,7 +31,7 @@ export default function QuizPage() {
           <br />
           apenas usando essas
           <br />
-          “FRASES DISCRETAS”
+          “<span className="text-blue-500">FRASES DISCRETAS</span>”
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
