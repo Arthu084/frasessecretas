@@ -101,9 +101,7 @@ export default function OfferPage() {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
           <h1 className="text-2xl font-bold leading-tight">
-            Envie essas Frases Secretas
-            <br />
-            e ele ficará <strong style={{ color: '#22d3ee' }}>obcecado</strong> por você!
+            Envie essas Frases Secretas<br />e ele ficará <strong style={{ color: '#22d3ee' }}>obcecado</strong> por você!
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
             Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por
@@ -164,7 +162,7 @@ export default function OfferPage() {
         </section>
 
         <section className="text-center my-4">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold">
             Você já se perguntou<br/>por que os homens só<br/>
             <span>pensam em sexo</span>?
           </h2>
