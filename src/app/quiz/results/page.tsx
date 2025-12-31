@@ -9,8 +9,8 @@ export default function ResultsPage() {
   const finalLink = "/oferta";
 
   return (
-    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans p-4">
-       <div className="w-full max-w-md mx-auto mt-4">
+    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans p-4">
+      <div className="w-full max-w-md mx-auto absolute top-0 mt-8">
         <div className="relative h-2 w-full bg-zinc-700 rounded-full">
           <div
             className="absolute top-0 left-0 h-full bg-red-600 rounded-full"
@@ -18,7 +18,7 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-center flex-grow">
+      <div className="flex flex-col items-center justify-center text-center">
         
         <div className="mt-8">
           <Image
@@ -34,7 +34,7 @@ export default function ResultsPage() {
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-4xl md:text-5xl leading-tight mt-2">
+        <h2 className="text-3xl md:text-4xl leading-tight mt-2">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
