@@ -26,7 +26,7 @@ export default function QuizPage() {
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           Descubra como deixar
           <br />
-          ele <span className="text-red-500">obcecado</span> por você
+          ele obcecado por você
           <br />
           apenas usando essas
           <br />
@@ -34,7 +34,7 @@ export default function QuizPage() {
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
-          Responda 3 perguntas rápidas para
+          Responda <span className="font-bold">3 perguntas rápidas</span> para
           <br />
           saber se você está pronta para ter
           <br />
