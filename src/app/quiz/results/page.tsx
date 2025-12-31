@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -32,7 +33,7 @@ export default function ResultsPage() {
         </h1>
         
         <h2 className="text-xl md:text-2xl font-bold leading-tight mt-2">
-            Você foi Selecionada<br/>para desbloquear o<br/><span className="text-red-500">Segredo da Sedução</span>
+            Você foi Selecionada<br/>para desbloquear o<br/><span className="text-red-500">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
         <p className="mt-8 text-base max-w-md">
