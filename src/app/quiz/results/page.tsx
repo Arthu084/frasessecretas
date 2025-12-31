@@ -28,22 +28,27 @@ export default function ResultsPage() {
         />
 
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
-          PARABÉNS, VOCÊ FOI <br/> SELECIONADA PARA TER <br/> ACESSO A ESSE <br/> <span className="text-red-500">SEGREDO DA SEDUÇÃO</span>
+          ACESSO CONFIRMADO <br />
+          Você foi Selecionada para desbloquear <br />
+          o Segredo da Sedução
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
-          Você saberá exatamente quais passos seguir
+          Você vai descobrir o que dizer, <br />
+          quando dizer e o que evitar para <br />
+          gerar interesse sem se expor demais.
         </p>
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-10">
-          VOCÊ ESTÁ PRONTA?
+        <h2 className="text-lg md:text-xl font-normal mt-10">
+          O próximo passo revela o método <br/>
+          completo que quase ninguém conhece.
         </h2>
         
         <Link href={finalLink}>
             <Button 
                 className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
-                SIM, QUERO CONTINUAR!
+                QUERO CONTINUAR
             </Button>
         </Link>
       </div>
