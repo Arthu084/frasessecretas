@@ -10,7 +10,7 @@ export default function QuizPage() {
   const secretImage = PlaceHolderImages.find((img) => img.id === 'secret');
 
   return (
-    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-center text-white font-sans">
+    <div className="relative min-h-screen w-full bg-black flex flex-col items-center justify-start text-white font-sans">
       {secretImage && (
         <Image
           src={secretImage.imageUrl}
@@ -23,7 +23,7 @@ export default function QuizPage() {
       )}
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 flex flex-col items-center justify-center text-center p-4">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 mt-20">
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           Descubra como deixar
           <br />
@@ -31,7 +31,7 @@ export default function QuizPage() {
           <br />
           apenas usando essas
           <br />
-          <span className="text-cyan-400">“FRASES DISCRETAS”</span>
+          “FRASES DISCRETAS”
         </h1>
 
         <p className="mt-8 text-lg md:text-xl max-w-md">
