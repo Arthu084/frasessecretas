@@ -18,7 +18,7 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start text-center flex-grow pt-8">
+      <div className="flex flex-col items-center justify-start text-center flex-grow pt-4">
         
         <Image
             src="https://i.imgur.com/EhUv9ej.png"
@@ -28,21 +28,21 @@ export default function ResultsPage() {
             className="mb-4"
         />
 
-        <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold leading-tight">
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-xl md:text-2xl leading-tight mt-2">
+        <h2 className="text-2xl md:text-3xl leading-tight mt-2">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
-        <p className="mt-8 text-sm max-w-md">
+        <p className="mt-8 text-base max-w-md">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
         </p>
 
-        <h3 className="text-sm font-normal mt-10">
+        <h3 className="text-base font-normal mt-10">
           O próximo passo revela o método <br/>
           completo que quase ninguém conhece.
         </h3>
