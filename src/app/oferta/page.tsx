@@ -100,7 +100,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+          <h1 className="text-2xl font-bold leading-tight">
             Envie essas Frases Secretas
             <br />
             e ele ficará <strong style={{ color: '#22d3ee' }}>obcecado</strong> por você!
@@ -165,7 +165,7 @@ export default function OfferPage() {
 
         <section className="text-center my-4">
           <h2 className="text-3xl md:text-4xl">
-            Você já se perguntou por que os homens só{' '}
+            Você já se perguntou<br/>por que os homens só<br/>
             <span>pensam em sexo</span>?
           </h2>
           <div className="mt-4 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
