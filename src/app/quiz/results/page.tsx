@@ -18,25 +18,25 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-center flex-grow">
+      <div className="flex flex-col items-center justify-start text-center flex-grow pt-8">
         
         <Image
             src="https://i.imgur.com/EhUv9ej.png"
             alt="Troféu"
             width={80}
             height={80}
-            className="mt-8 mb-4"
+            className="mb-4"
         />
 
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-xl md:text-2xl leading-tight mt-8">
-            <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold">SEGREDO DA SEDUÇÃO</span>
+        <h2 className="text-xl md:text-2xl leading-tight mt-2">
+            <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
-        <p className="mt-8 text-base max-w-md">
+        <p className="mt-8 text-sm max-w-md">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
