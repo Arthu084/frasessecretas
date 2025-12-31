@@ -25,14 +25,14 @@ export default function ResultsPage() {
             alt="Troféu"
             width={80}
             height={80}
-            className="mt-8 mb-8"
+            className="mt-8 mb-4"
         />
 
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-xl md:text-2xl leading-tight mt-4">
+        <h2 className="text-xl md:text-2xl leading-tight mt-8">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
@@ -42,7 +42,7 @@ export default function ResultsPage() {
           gerar interesse sem se expor demais.
         </p>
 
-        <h3 className="text-base font-normal mt-10">
+        <h3 className="text-sm font-normal mt-10">
           O próximo passo revela o método <br/>
           completo que quase ninguém conhece.
         </h3>
