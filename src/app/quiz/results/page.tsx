@@ -32,16 +32,16 @@ export default function ResultsPage() {
         </h1>
         
         <h2 className="text-xl md:text-2xl font-bold leading-tight mt-2">
-            Você foi Selecionada para<br/>desbloquear o <span className="text-red-500">Segredo da Sedução</span>
+            Você foi Selecionada<br/>para desbloquear o<br/><span className="text-red-500">Segredo da Sedução</span>
         </h2>
 
-        <p className="mt-8 text-base md:text-lg max-w-md">
+        <p className="mt-8 text-base max-w-md">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
         </p>
 
-        <h3 className="text-base md:text-lg font-normal mt-10">
+        <h3 className="text-base font-normal mt-10">
           O próximo passo revela o método <br/>
           completo que quase ninguém conhece.
         </h3>
