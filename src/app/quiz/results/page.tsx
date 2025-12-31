@@ -39,7 +39,7 @@ export default function ResultsPage() {
           gerar interesse sem se expor demais.
         </p>
 
-        <h2 className="text-lg md:text-xl font-normal mt-10">
+        <h2 className="text-base md:text-lg font-normal mt-10">
           O próximo passo revela o método <br/>
           completo que quase ninguém conhece.
         </h2>
@@ -51,8 +51,6 @@ export default function ResultsPage() {
                 QUERO CONTINUAR
             </Button>
         </Link>
-      </div>
-      <div className="flex justify-start w-full max-w-md mx-auto mt-8">
       </div>
     </div>
   );
