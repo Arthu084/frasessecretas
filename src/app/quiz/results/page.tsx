@@ -18,7 +18,7 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start text-center flex-grow pt-2">
+      <div className="flex flex-col items-center justify-start text-center flex-grow pt-8">
         
         <Image
             src="https://i.imgur.com/EhUv9ej.png"
@@ -28,7 +28,7 @@ export default function ResultsPage() {
             className="mb-4"
         />
 
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold leading-tight">
           ACESSO CONFIRMADO
         </h1>
         
@@ -49,7 +49,7 @@ export default function ResultsPage() {
         
         <Link href={finalLink}>
             <Button 
-                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-2xl py-7 px-24 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
+                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-2xl py-7 px-28 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
                 QUERO CONTINUAR
             </Button>
