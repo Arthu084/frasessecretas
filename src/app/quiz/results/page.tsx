@@ -34,7 +34,7 @@ export default function ResultsPage() {
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-xl md:text-2xl leading-tight mt-2">
+        <h2 className="text-2xl md:text-3xl leading-tight mt-2">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
