@@ -34,11 +34,11 @@ export default function ResultsPage() {
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-xl md:text-2xl leading-tight mt-2">
+        <h2 className="text-xl md:text-2xl leading-tight mt-2 text-base">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
-        <p className="mt-8 text-sm max-w-lg">
+        <p className="mt-8 text-base max-w-lg">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
@@ -51,7 +51,7 @@ export default function ResultsPage() {
         
         <Link href={finalLink}>
             <Button 
-                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-16 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
+                className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold text-xl py-6 px-12 rounded-lg shadow-lg shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
                 QUERO CONTINUAR
             </Button>
