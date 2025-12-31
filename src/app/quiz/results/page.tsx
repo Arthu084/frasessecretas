@@ -18,17 +18,19 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-center flex-grow pt-8">
+      <div className="flex flex-col items-center justify-center text-center flex-grow">
         
-        <Image
-            src="https://i.imgur.com/EhUv9ej.png"
-            alt="Troféu"
-            width={80}
-            height={80}
-            className="mb-4"
-        />
+        <div className="mt-8">
+          <Image
+              src="https://i.imgur.com/EhUv9ej.png"
+              alt="Troféu"
+              width={80}
+              height={80}
+              className="mb-4"
+          />
+        </div>
 
-        <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+        <h1 className="text-xl md:text-2xl font-bold leading-tight">
           ACESSO CONFIRMADO
         </h1>
         
