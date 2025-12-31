@@ -100,7 +100,7 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h1 className="text-2xl md:text-3xl font-bold leading-tight">
             Envie essas <span className="text-red-500">Frases Discretas</span>
             <br />
             e ele ficará
