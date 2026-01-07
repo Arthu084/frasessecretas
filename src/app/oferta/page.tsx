@@ -11,7 +11,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/carousel';
-import { CheckCircle, Gift, X } from 'lucide-react';
+import { Check, CheckCircle, Gift, X } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 import {
@@ -95,6 +95,12 @@ export default function OfferPage() {
         'Sim! Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeita, basta solicitar o reembolso e devolveremos 100% do seu dinheiro, sem perguntas.',
     },
   ];
+  
+  const introBenefits = [
+    'Sem implorar',
+    'Sem jogos',
+    'Sem se diminuir',
+  ];
 
   return (
     <div className="min-h-screen w-full bg-black text-white font-sans">
@@ -103,9 +109,19 @@ export default function OfferPage() {
           <h1 className="text-2xl leading-tight">
             Use as <strong className="text-red-500">Frases Secretas</strong> certas<br/>e faça ele <strong>pensar em você naturalmente</strong>
           </h1>
-          <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
-            Sem implorar, sem jogos e<br/>sem se diminuir.<br/>Quando a comunicação muda,<br/>o interesse muda.
-          </h2>
+          <div className="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
+            <ul className="space-y-2 inline-block text-left">
+                {introBenefits.map((benefit, index) => (
+                    <li key={index} className="flex items-center gap-2">
+                        <Check className="h-6 w-6 text-green-500" />
+                        <span>{benefit}</span>
+                    </li>
+                ))}
+            </ul>
+            <p className="mt-4 text-zinc-300">
+                Quando a comunicação muda,<br/>o interesse muda.
+            </p>
+        </div>
         </header>
 
         <section className="bg-zinc-900 py-8 px-4 rounded-xl shadow-lg my-8">
