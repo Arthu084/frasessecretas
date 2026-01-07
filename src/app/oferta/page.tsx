@@ -118,7 +118,7 @@ export default function OfferPage() {
                     </li>
                 ))}
             </ul>
-            <p className="mt-4 text-zinc-300">
+            <p className="mt-4 text-zinc-300 font-bold">
                 Quando a comunicação muda,<br/>o interesse muda.
             </p>
         </div>
