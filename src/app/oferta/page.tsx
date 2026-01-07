@@ -101,11 +101,10 @@ export default function OfferPage() {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
           <h1 className="text-2xl leading-tight">
-            Envie essas Frases Secretas<br />e ele ficará <strong style={{ color: '#22d3ee' }}>obcecado</strong> por você!
+            Use as Frases Secretas certas<br/>e faça ele pensar em você naturalmente
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
-            Sem ter que se humilhar, fazer ciúmes com outros, ou implorar por
-            atenção. Ele simplesmente não terá olhos para mais ninguém.
+            Sem implorar, sem jogos e sem se diminuir.<br/>Quando a comunicação muda, o interesse muda.
           </h2>
         </header>
 
@@ -329,3 +328,5 @@ export default function OfferPage() {
     </div>
   );
 }
+
+    
