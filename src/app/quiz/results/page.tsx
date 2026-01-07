@@ -18,7 +18,7 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start text-center pt-8">
+      <div className="flex flex-col items-center justify-start text-center pt-16">
         
         <div className="mt-8">
           <Image
@@ -34,7 +34,7 @@ export default function ResultsPage() {
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-5xl leading-tight mt-2">
+        <h2 className="text-4xl leading-tight mt-2">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
