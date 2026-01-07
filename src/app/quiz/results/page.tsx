@@ -18,7 +18,7 @@ export default function ResultsPage() {
           ></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start text-center pt-16">
+      <div className="flex flex-col items-center justify-start text-center pt-8">
         
         <div className="mt-8">
           <Image
@@ -34,19 +34,20 @@ export default function ResultsPage() {
           ACESSO CONFIRMADO
         </h1>
         
-        <h2 className="text-4xl leading-tight mt-2">
+        <h2 className="text-5xl leading-tight mt-2">
             <span className="font-normal">Você foi Selecionada<br/>para desbloquear o</span><br/><span className="text-red-500 font-bold uppercase">SEGREDO DA SEDUÇÃO</span>
         </h2>
 
-        <p className="mt-8 text-base max-w-lg">
+        <p className="mt-8 text-lg max-w-lg">
           Você vai descobrir o que dizer, <br />
           quando dizer e o que evitar para <br />
           gerar interesse sem se expor demais.
         </p>
 
-        <h3 className="text-base font-normal mt-10">
+        <h3 className="text-lg font-normal mt-10">
           O próximo passo revela o método <br/>
-          completo que quase ninguém conhece.
+          que transforma conversas comuns <br/>
+          em conexão e desejo.
         </h3>
         
         <Link href={finalLink}>
