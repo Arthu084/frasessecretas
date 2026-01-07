@@ -225,7 +225,7 @@ export default function OfferPage() {
                 
                 <div className="my-6 flex-grow">
                   <p className="text-3xl font-bold my-1">
-                    R$17,00
+                    R$29,00
                   </p>
                   <p className="text-sm font-medium text-zinc-400">
                     (Pagamento único)
@@ -270,7 +270,7 @@ export default function OfferPage() {
                   
                   <div className="my-6 flex-grow">
                     <p className="text-3xl md:text-4xl font-extrabold my-1">
-                      R$27,00
+                      R$39,00
                     </p>
                     <p className="text-sm font-medium text-rose-100">
                       (Pagamento único e acesso vitalício)
