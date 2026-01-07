@@ -51,9 +51,9 @@ export default function OfferPage() {
   }, [api]);
 
   const problems = [
-    { title: 'Medo de ser rejeitada' },
-    { title: 'Dificuldade em entender o comportamento masculino' },
-    { title: 'Desconhece a comunicação sedutora' },
+    { title: 'Se censurando por medo de errar' },
+    { title: 'Falando demais quando deveria pausar' },
+    { title: 'Não usando palavras que despertam curiosidade' },
   ];
 
   const benefitsBasico = [
@@ -108,7 +108,7 @@ export default function OfferPage() {
         <header className="text-center mb-8">
           <h1 className="text-2xl leading-tight">
             Use as <strong className="text-red-500">Frases Secretas</strong><br/>
-            certas e faça ele <strong>pensar em você naturalmente..</strong>
+            certas e faça ele <br/><strong>pensar em você naturalmente..</strong>
           </h1>
           <div className="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
             <ul className="space-y-2 inline-block text-left">
@@ -189,7 +189,7 @@ export default function OfferPage() {
         <section className="my-8">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
             <p className="text-left text-zinc-300 mb-6">
-              Baseado nas suas respostas, você não consegue atrair o homem que deseja por causa desses problemas:
+              Com base nas suas respostas, hoje você pode estar:
             </p>
             <hr className="border-t border-zinc-700 mb-6" />
             <ul className="space-y-4">
