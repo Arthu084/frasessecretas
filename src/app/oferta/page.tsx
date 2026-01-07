@@ -160,19 +160,13 @@ export default function OfferPage() {
           </div>
         </section>
 
-        <section className="text-center my-4">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Você já se perguntou<br/>por que os homens só<br/>
-            <span>pensam em sexo</span>?
+        <section className="text-center my-12">
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            Muitas mulheres acreditam que precisam<br />se esforçar mais para prender um homem.
           </h2>
-          <div className="mt-4 text-lg md:text-xl max-w-2xl mx-auto space-y-6 text-zinc-200 text-center">
-            <p>
-              O sexo libera um neurotransmissor no cérebro masculino chamado de{' '}
-              <span className="font-bold" style={{ color: '#22d3ee' }}>dopamina</span>. Na
-              maioria das vezes, a única fonte de dopamina do relacionamento é o
-              sexo.
-            </p>
-          </div>
+          <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-zinc-200">
+            Mas o que realmente cria desejo<br/>é como você se comunica emocionalmente.
+          </p>
         </section>
 
         <section className="my-8">
@@ -328,5 +322,3 @@ export default function OfferPage() {
     </div>
   );
 }
-
-    
