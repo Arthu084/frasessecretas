@@ -101,7 +101,7 @@ export default function OfferPage() {
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
           <h1 className="text-2xl leading-tight">
-            Use as Frases Secretas certas<br/>e faça ele pensar em você naturalmente
+            Use as <strong className="text-red-500">Frases Secretas</strong> certas<br/>e faça ele <strong>pensar em você naturalmente</strong>
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
             Sem implorar, sem jogos e<br/>sem se diminuir.<br/>Quando a comunicação muda,<br/>o interesse muda.
