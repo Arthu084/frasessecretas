@@ -161,7 +161,7 @@ export default function OfferPage() {
         </section>
 
         <section className="text-center my-12">
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-2xl md:text-3xl font-bold leading-tight">
             Muitas mulheres acreditam que precisam<br />se esforçar mais para prender um homem.
           </h2>
           <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-zinc-200">
