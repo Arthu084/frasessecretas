@@ -104,7 +104,7 @@ export default function OfferPage() {
             Use as Frases Secretas certas<br/>e faça ele pensar em você naturalmente
           </h1>
           <h2 className="text-lg md:text-xl font-normal text-zinc-300 mt-4 max-w-2xl mx-auto">
-            Sem implorar, sem jogos e sem se diminuir.<br/>Quando a comunicação muda, o interesse muda.
+            Sem implorar, sem jogos e<br/>sem se diminuir.<br/>Quando a comunicação muda,<br/>o interesse muda.
           </h2>
         </header>
 
@@ -161,7 +161,7 @@ export default function OfferPage() {
         </section>
 
         <section className="text-center my-12">
-          <h2 className="text-2xl md:text-3xl font-bold leading-tight">
+          <h2 className="text-2xl md:text-3xl leading-tight">
             Muitas mulheres acreditam que precisam<br />se esforçar mais para prender um homem.
           </h2>
           <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto text-zinc-200">
