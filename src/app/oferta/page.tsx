@@ -34,8 +34,8 @@ export default function OfferPage() {
     'https://i.imgur.com/mtW4h1x.png',
   ];
 
-  const ofertaLinkCompleto = 'https://checkout.dinamicasdafe.site/VCCL1O8SCNXU';
-  const ofertaLinkBasico = 'https://checkout.dinamicasdafe.site/VCCL1O8SCNIV'; // Placeholder - you might want to change this
+  const ofertaLinkBasico = 'https://pay.cakto.com.br/high9w4';
+  const ofertaLinkCompleto = 'https://pay.cakto.com.br/bkn7gi4_806365';
 
   React.useEffect(() => {
     if (!api) {
@@ -106,21 +106,21 @@ export default function OfferPage() {
     <div className="min-h-screen w-full bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 max-w-3xl">
         <header className="text-center mb-8">
-          <h1 className="text-2xl leading-tight">
-            Use as <strong className="text-red-500">Frases Secretas</strong><br/>
-            certas e faça ele <br/><strong>pensar em você naturalmente..</strong>
+          <h1 className="text-2xl leading-tight font-bold">
+            Use as <span className="text-red-500">Frases Secretas</span><br/>
+            certas e faça ele pensar<br/>em você naturalmente..
           </h1>
           <div className="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
             <ul className="space-y-2 inline-block text-left">
                 {introBenefits.map((benefit, index) => (
                     <li key={index} className="flex items-center gap-2">
                         <Check className="h-6 w-6 text-green-500" />
-                        <span>{benefit}</span>
+                        <span className="font-bold">{benefit}</span>
                     </li>
                 ))}
             </ul>
             <p className="mt-4 text-zinc-300 font-bold">
-                Quando a comunicação muda,<br/>o interesse muda.
+                <strong>Quando a comunicação muda, o interesse muda.</strong>
             </p>
         </div>
         </header>
@@ -188,7 +188,7 @@ export default function OfferPage() {
 
         <section className="my-8">
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl mx-auto">
-            <p className="text-left text-zinc-300 mb-6">
+            <p className="text-left text-zinc-300 mb-6 font-bold">
               Com base nas suas respostas, hoje você pode estar:
             </p>
             <hr className="border-t border-zinc-700 mb-6" />
@@ -258,7 +258,7 @@ export default function OfferPage() {
 
             {/* Card Completo */}
             <div className="relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                 <div className="bg-red-500 text-white text-sm font-bold px-4 py-1 rounded-full uppercase">
                   Mais Vendido
                 </div>
